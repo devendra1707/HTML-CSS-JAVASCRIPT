@@ -1,0 +1,49 @@
+<!-- example on event handling with image styles -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Events</title>
+		<style>
+			button{
+				width:140px;
+				font-size:20px;
+			}
+			#div1{
+				margin:auto;
+				width:750px;
+			}
+		</style>
+ </head>
+ <body>
+	<div id="div1">
+	   <h2>Demo on image filter options</h2>
+		<img id="img1" src="images/c.jpg"/>
+		<br> <br>
+	   <button id="bt">None</button>
+	   <button id="bt1">Blur</button>
+	   <button id="bt2">Brightness</button>
+	   <button id="bt3">Contrast</button>
+	   <button id="bt4">Grayscale</button> <br>
+	   <button id="bt5">Invert</button> 
+	   <button id="bt6">Hue-rotate</button>
+	   <button id="bt7">Saturate</button>
+	   <button id="bt8">Sepia</button>
+	   <button id="bt9">Drop-shadow</button>
+	</div>
+   <script>
+		let img = document.getElementById("img1").style;		
+		document.getElementById("bt").onclick = () => img.filter="none";
+		document.getElementById("bt1").onclick = () => img.filter="blur(6px)";
+		document.getElementById("bt2").onclick = () => img.filter="brightness(160%)";
+		document.getElementById("bt3").onclick = () => img.filter="contrast(185%)";
+		document.getElementById("bt4").onclick = () => img.filter="grayscale(90%)";
+		document.getElementById("bt5").onclick = () => img.filter="invert(85%)";
+		document.getElementById("bt6").onclick = () => img.filter="hue-rotate(160deg)";
+		document.getElementById("bt7").onclick = () => img.filter="saturate(7)";
+		document.getElementById("bt8").onclick = () => img.filter="sepia(90%)";
+		document.getElementById("bt9").onclick = () => img.filter="drop-shadow(6px 6px 7px green)";
+   </script>
+  
+ </body>
+</html>
+

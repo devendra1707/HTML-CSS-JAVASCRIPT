@@ -1,0 +1,29 @@
+<!-- example on JS new features -->
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>JS New3</title>
+ </head>
+<body>
+  <h2>Demo on ... operator with method</h2>
+  <script>
+    function sum(...n)  //now n will accept any no.of args
+	{	
+      let s=0;
+      for(let t of n){
+         s=s+t;
+      }
+      document.write("Elements: "+ n, "<br>");
+      document.write("Total :", s, "<br>");
+	}
+
+    sum();
+    sum(10,20);
+    sum(11,22,36);
+    sum(5,1,7,9,4,8);
+  </script>
+</body>
+</html>
+
+
+

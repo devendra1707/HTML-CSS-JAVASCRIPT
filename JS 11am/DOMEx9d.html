@@ -1,0 +1,20 @@
+<!-- example on element object -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Dom</title>
+ </head>
+ <body id="b">
+   <h2>Demo on changing style </h2>
+	
+	<h1 id="heading">Siva Kumar Yarrapati</h1>
+
+	<label>Select Color:</label>
+	<input type="color" id="color1" onchange="document.getElementById('heading').style.color=color1.value"> 
+	<br>
+
+	<label>Select Background:</label>
+	<input type="color" id="color2" value="#ff0000" onchange="document.getElementById('heading').style.backgroundColor=color2.value">
+
+</body>
+</html>

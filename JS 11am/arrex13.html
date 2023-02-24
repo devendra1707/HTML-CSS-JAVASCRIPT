@@ -1,0 +1,42 @@
+<!-- example on Array with images -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	<style>
+		img{
+			width:100%;
+			height:350px;
+		}
+	</style>
+ </head>
+ <body>
+	<h2>demo displaying images</h2>
+	<img id="im" src="images/baby.jpg"/>
+
+	<script>
+		const imgs = ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.png", "g.jpg", "h.jpg"];
+		var index=0;
+
+		/* directly displaying images 
+		for(let i of imgs) {
+			document.write("<img src='images/"+i+"'/>");
+		}	*/
+
+		//========> displaying images liks slides <===============
+		//it used to call a function repeated
+		window.setInterval("displayImg()", 4000); //every 4s it call function
+		
+		function displayImg() //udf
+		{
+			if(index>7) {
+				index=0;		//re-init (re started)
+			}
+			document.getElementById("im").src="images/"+imgs[index];
+			index++; 
+		}
+
+	</script>
+ </body>
+</html>

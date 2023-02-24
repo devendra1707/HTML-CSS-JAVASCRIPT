@@ -1,0 +1,76 @@
+<!-- example on validating data @cursor moving -->
+<!DOCTYPE html>
+<html>
+ <head>			
+  <title>Events Demo</title>	
+  <script>
+     function checkName() 
+     {		
+        let ch;
+		let name = fna.value;
+		for(i=0; i<name.length; i++)		  
+		{
+			ch = name.charAt(i);
+			if( !( (ch>='A' && ch<='Z') || (ch>='a' && ch<='z') ) )
+			{
+				document.getElementById("nerr").innerHTML="enter valid name";
+				document.getElementById("fna").style.border="2px solid red";
+				break;
+			}
+		}
+		console.log("name => blur")
+     }			 
+	
+      function checkPh()
+      {
+       let ch;
+		let phone = document.getElementById("ph");
+		let st = phone.value;
+		for(i=0; i<st.length; i++)			 
+		{
+			ch = st.charAt(i);
+			if( !(ch>='0' && ch<='9') )
+			{
+				document.getElementById("pherr").innerHTML="enter valid phone number";
+				phone.style.border="2px solid red";
+				break;
+			}
+		}  
+		console.log("phone => blur") 
+      }
+  </script>		 
+	<style>
+		span{
+			color:red;
+		}
+	</style>
+ </head>
+ <body>
+     <h1 id="head1"> Demo on Cursor events </h1>
+     <label>FullName</label> <br> 
+	 <input type="text" id="fna"> <br>
+	 <span id="nerr"> </span> <br> <br>
+
+    <label>Phone</label> <br>
+	<input type="text" id="ph" maxlength="10"> <br> 
+	<span id="pherr"> </span> 
+
+    <script>
+      document.getElementById("fna").addEventListener("blur", checkName); //when we press tab key 
+      document.getElementById("fna").onfocus = function(){			//when cursor comes
+																document.getElementById("nerr").innerHTML="";
+																document.getElementById("fna").style.border="2px inset rgb(118, 118, 118)";
+																console.log("name => focus")
+																									};
+
+      document.getElementById("ph").addEventListener("blur", checkPh); 
+      document.getElementById("ph").onfocus = () => {			//when cursor comes
+															document.getElementById("pherr").innerHTML="";
+															document.getElementById("ph").style.border="2px inset rgb(118, 118, 118)";
+																console.log("phone => focus")
+																									};
+   </script>
+ </body>
+</html>					 
+ 
+		

@@ -1,0 +1,26 @@
+<!-- example on Array methods -->
+  <h1> example on unshift & shift methods </h1>
+  <script>
+    const fruits=new Array();			
+    fruits.unshift("Apples");  //its adding ele @begining of array	
+    fruits.unshift("Mangos");
+	fruits.unshift('Oranges'); 
+    let newLength = fruits.unshift('Papayas');
+
+    document.write(newLength +"<br>"); 
+    document.write("Fruites => " + fruits +"<br>" );
+ 
+	ele = fruits.shift();   //it returns 1st ele & remove 1st ele 
+    document.write("1st shift " + ele +"<br>");
+    document.write("2nd shift " + fruits.shift() +"<br>");
+    document.write("Fruites => " + fruits +"<br>");
+	fruits.unshift("Banana");
+	fruits.unshift("Grape");
+    document.write("Fruites => " + fruits +"<br>"); 
+  </script>
+		<!--
+				push(), pop() ==> 
+				unshfit(), shift() ==>
+				index ==> random		-->
+
+	 

@@ -1,0 +1,43 @@
+<!-- Local variables
+		-------------------
+		>Any variable declared inside a function or inside a block is called local variable.
+		> allocates the memory while begin block/fun, de-allocates @end of block/fun
+		> local we can access with in the block/fun, these variable are used to maintain personal/temp data 
+		> use "let" keyword for declaring local variables		-->
+	
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Fun Ex3</title>
+ </head>
+ <body>
+    <h2> Demo on Local vars</h2>
+	<script>
+		for(let i=1; i<=10; i++) {
+			document.write(i+" ");
+		}
+		//document.write(i);	//error, bcz its local 
+		document.write("<br>");
+
+		 function fun1()   //def/dev
+		 {
+			  let a = "Apple";     //local variable
+			  document.write("msg from fun1:<br>");
+			  document.write("A	:" + a +"<br>");
+			  //document.write(b);  error
+		 }
+
+		 function fun2() 
+		 {
+			  let b = "Mango";     //local variable
+			  document.write("msg from fun2:<br>");
+			  document.write("B	: " + b +"<br>");
+			  //document.write(a);	error
+		 }
+
+		fun1(); //calling
+		fun2();
+
+  	</script>
+ </body>
+</html>

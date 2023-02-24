@@ -1,0 +1,22 @@
+<!-- example on event handling -->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Events Demo</title>
+ </head>
+ <body>
+     <h1 id="head1"> Demo on Click event </h1>
+					
+    <script>
+      document.getElementById("head1").addEventListener("click", fun1);
+
+  	  var count=1;
+      function fun1()
+      {
+        document.getElementById("head1").innerHTML = `Demo on Click event : ${count}`;
+        //document.getElementById("head1").innerHTML = `Hello`;
+		count++;
+      }
+   </script>
+ </body>
+</html>

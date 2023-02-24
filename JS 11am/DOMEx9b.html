@@ -1,0 +1,36 @@
+<!-- example on element object -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Dom Demo13</title>
+ </head>
+ <body>
+   <h2>Demo on element properties</h2>
+ 
+   <p id="p1"> Green Apples </p>
+   <button id="b1">Click Here</button>
+
+   <input type="text" id="t1" value="100"/>
+   <hr>
+
+   <script>
+	  let pob=document.getElementById("p1");  //pob is ref/object of para p1 
+      document.write("P Val "+ pob.innerHTML +"<br>");
+      //pob.innerHTML="Bananas";   //overriting on p1
+  	  //pob.innerHTML+=", Bananas"; //appending to p1
+	  pob.innerHTML="";	
+				 
+      let bob=document.getElementById("b1");  //bob is ref/object button b1
+      document.write("B Val "+ bob.innerHTML +"<br>");
+      // bob.innerHTML="Clicked";  //overriting on b1		
+       //bob.innerHTML+=", Done";  //overriting on b1		
+
+      let tob=document.getElementById("t1");  //tob is ref/object text filed t1
+      document.write("T Val "+ tob.value +"<br>");
+       //tob.value="222";  //overriting on t1		
+	  //tob.value+=456;
+	   tob.value="";
+   </script>
+ </body>
+</html>
+ 

@@ -1,0 +1,50 @@
+<!-- example on functions  -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Fun Ex13</title>
+   <script>  
+    function isPrime()
+	{
+	  let n = parseInt( txtNum.value );
+	/*
+	  let count=0;
+	  for(i=1; i<=n; i++)	 
+	  {
+         if(n%i==0)
+			count++;
+      }			
+		if(count==2) OR		*/
+	 
+	 let flag=true; //assume prime
+	 //assume 1 & itself are factors (2fact)		 
+	  for(i=2; i<=n/2; i++)		
+	  {
+		 if(n%i==0) {	
+				flag=false;
+				break;
+		 }
+	  }
+	
+	  if(flag==true)			// if(count==2)
+		 alert("Given  Number is Prime");
+	  else
+		  alert("Given Number is Not A Prime");
+	}
+  </script>
+ </head>
+ <body>
+   <h2> Demo on function </h2>
+   <label>Enter Number</label> 
+   <input type="text" id="txtNum" placeholder="+Ve Integer Only">
+   <button onclick="isPrime()"> Check Prime </button>  
+	
+ </body>
+</html>
+
+
+
+
+
+
+

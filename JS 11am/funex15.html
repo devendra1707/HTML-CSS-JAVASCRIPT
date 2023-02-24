@@ -1,0 +1,35 @@
+<!-- example on functions  -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Fun Ex16</title>
+ </head>
+ <body>
+   <h2> Demo on function pointer </h2>		
+   <input type="text" id="t1" placeholder="Enter First Number">  &nbsp;&nbsp;
+   <input type="text" id="t2" placeholder="Enter Second Number"> <br>
+
+   <button id="b1"> Add </button>  &nbsp;&nbsp;
+   <button id="b2"> Sub </button>  &nbsp;&nbsp;  
+  <script>
+				
+										//addEventListener(event, fun/f-p) 
+    document.getElementById("b1").addEventListener( "click", function(){ 
+																												a = parseInt( t1.value );
+																												b = parseInt( t2.value );
+																										document.write('Sum '+(a+b) 	);
+																											} 
+																								);
+
+	document.getElementById("b2").addEventListener( "click", function(){ 
+																												a = parseInt( t1.value );
+																												b = parseInt( t2.value );
+																												document.write('Sub '+ (a-b) );
+																											} 
+																								);
+  </script>
+ </body>
+</html>	
+		 
+
+

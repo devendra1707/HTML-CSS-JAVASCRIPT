@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <script>
+      function add()
+      {
+		try
+		{
+		  var z=eval(t1.value)+eval(t2.value);  //throw
+		  //document.write("sum of two no is : "+z);
+          document.getElementById("res").innerHTML="Sum is "+z;		
+		}catch(excep){
+	      document.getElementById("res").innerHTML="Invalid Input";	
+		}
+      }
+   </script>
+ </head>
+<body>
+   <label>FirstNumber</label>
+   <input type="text" id="t1">
+   <br>
+   <label>SecondNumber</label>
+   <input type="text" id="t2">
+   <br>
+   <button onclick="add()">Addition</button> <br>
+   <output id="res"> </output>
+ </body>
+</html>
+
+

@@ -1,0 +1,40 @@
+<!-- example on change  event -->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Events Demo</title>
+ </head>
+<body>
+	<h2>demo on chaging size of image</h2>
+   <!-- <h2 id="h" style="color:#ffff66; background:#3300ff;"> Siva Kumar Y </h2> -->
+	<div style="text-align:center;">
+		<img id="img1" src="images/rose.jpg" width="150px" height="150px">
+		<br>
+	   <input type="radio" id="r1" name="rb"> <label>Small</label>
+	   <input type="radio" id="r2" name="rb"> <label>Medium</label>
+	   <input type="radio" id="r3" name="rb"> <label>Large</label>
+	</div>	 
+  <script>
+     document.getElementById("r1").addEventListener("change",  () => {
+																										  let iob =document.getElementById("img1").style;
+																										  if( document.getElementById("r1").checked)
+																												 iob.width="100px";
+																												 iob.height="100px";
+																										} );
+
+      document.getElementById("r2").addEventListener("change",  () => {
+																										  let iob =document.getElementById("img1").style;
+																										  if( document.getElementById("r2").checked)
+																												 iob.width="250px";
+																												 iob.height="250px";
+																										} );
+
+     document.getElementById("r3").addEventListener("change",  () => {
+																										  let iob =document.getElementById("img1").style;
+																										  if( document.getElementById("r3").checked)
+																												 iob.width="500px";
+																												 iob.height="500px";
+																										} );
+   </script>
+ </body>
+</html>	

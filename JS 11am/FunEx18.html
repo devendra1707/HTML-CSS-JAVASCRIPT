@@ -1,0 +1,25 @@
+<!-- example on function expression  -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Fun Ex</title>
+ </head>
+ <body>
+   <h2> Demo on  function expression</h2>
+	<script>
+		let age = parseInt( prompt("enter ur age"));
+		let result;
+
+		if(age<18)
+		{
+			result=function(){ alert("Sorry, Ur Not Eligible for Vote"); };
+		} else {
+			result=function(){ alert("Hi, Welcome for Voting"); };
+		}
+ 
+		result();
+   </script>
+ </body>
+</html>				 
+
+

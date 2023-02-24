@@ -1,0 +1,29 @@
+<!-- example on Array -->
+  <h2>demo on storing different types of values in an array</h2>
+  <script>
+    let b = ["Siva", 'Y', 50,  5.11, true, new Date("30-aug-2021") ];
+    document.write( b.length +"<br>");
+    document.write( b + "<br>");
+
+	let eles = [10,20,30,40,50,60,70];	//init
+    document.write( eles.length +"<br>");
+    document.write( eles + "<br>");
+	eles.length=5;	//reduces size (resizing array)
+    document.write( eles.length +"<br>");
+    document.write( eles + "<br>");
+
+	eles[5]=11;		//resizing array
+	eles[6]=22;
+    document.write( eles.length +"<br>");
+    document.write( eles + "<br>");
+
+	let a = [];		//array declaration
+	let n = prompt("enter size");
+	for(let i=0; i<n; i++) {
+		a[i] = prompt("enter array value");
+	}
+
+	document.write("Array : "+a);
+  </script>
+
+ 

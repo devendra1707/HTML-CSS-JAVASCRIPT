@@ -1,0 +1,31 @@
+<!-- example on date functions -->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Date Funs</title>
+ </head>
+ <body>
+   <h2> demo on date functions </h2>
+   <script>
+     let dt=new Date(); //date object is created & init with system date & time
+
+	 document.write("ToDay is :"+ dt +"<br>" );
+
+	 document.write("MiSec : "+ dt.getTime() ); //it returns date&time in mi-sec
+
+	 document.write("<br>Sec : "+ dt.getSeconds() ); //it returns sec only
+
+     document.write("<br>Min : "+ dt.getMinutes() );  //it returns min only
+	 
+     document.write("<br>Hr : "+ dt.getHours() ); //it returns hr only
+
+     document.write("<br>Day :"+ (dt.getDay()+1) );  //it returns day only
+
+     document.write("<br>Date :"+ dt.getDate() ); //it returns date only
+
+     document.write("<br>Month :"+ (dt.getMonth()+1) ); //it returns month only
+
+     document.write("<br>Year :"+ dt.getFullYear() ); //it returns year only
+  </script>
+ </body>
+</html>

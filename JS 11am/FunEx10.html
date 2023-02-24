@@ -1,0 +1,30 @@
+<!-- example on functions with default args -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Fun Ex10</title>
+   <script> 
+		//finding sum of 3values
+		function sum(a=0, b=0, c=0)   //parameter with default value
+		{
+		  return a+b+c;
+		}					
+	</script>
+ </head>
+ <body>
+   <h2> Demo on parameter with default value (since JS6) </h2>
+	<script>
+       document.write("Total Val : " + sum(10,25,60) + "<br>");  //call1	
+       document.write("Total Val : " + sum(22,44) + "<br>");  //call2			
+       document.write("Total Val : " + sum() + "<br>");  //call3
+       document.write("Total Val : " + sum(30) + "<br>");  //call4
+   </script>
+ </body>
+</html>
+
+
+
+
+
+
+

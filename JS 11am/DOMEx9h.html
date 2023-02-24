@@ -1,0 +1,25 @@
+ <!-- example on element object -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Dom Demo20</title>  
+ </head>
+<body>
+   <h2>demo on element object methods</h2>
+   <img id="img1" src="a.jpg" width="200" height="200"> <br>
+   <input type="text" id="t1"> <br>
+   <input type="text" id="t2"> <br>
+
+   <br>
+   <button id="b" onclick="alert('Button Clicked')"> Click </button> <br>
+  <script>
+     let x=document.getElementById("img1").hasAttribute("src");
+     document.write(x +"<br>");
+     document.write( document.getElementById("t1").hasAttribute("size") , "<br>");
+
+     document.getElementById("t2").focus();
+
+     document.getElementById("b").click();
+  </script>
+</body>
+</html>

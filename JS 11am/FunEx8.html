@@ -1,0 +1,38 @@
+<!-- example on function with parameters  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fun Ex8</title>
+    <script> 
+		function showMessage(from, text)     //parameters
+		{
+		  //alert(from + ': ' + text);
+          document.write(from + " : " + text + "<br>");
+		}
+
+	function myfun()
+	{
+		let a="Ram";		//local
+		let b="Whatsup?";
+		showMessage(a, b);  // calling2  (a & b are arguments, calling fun with copy of a & b)
+	}
+   </script>
+ </head>
+  <body>
+   <h2> Demo on Arguments </h2>
+   <script> 
+		myfun();
+		showMessage('Siva', "Hello"); // calling 1
+		showMessage("Sam");	//valid
+		showMessage("Rahim","hi", "how are you?");		//valid
+
+   </script>
+ </body>
+</html>
+
+
+
+
+
+
+

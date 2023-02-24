@@ -1,0 +1,37 @@
+<!-- example on stopping/disable cut, copy, paste & mouse right click operations -->
+<!DOCTYPE html>
+<html>				
+ <head>
+  <title>Events Demo</title>	
+  <script>
+     function stopOpe(win)
+     {
+        win.preventDefault();  //it stops actual operations by browser
+        alert("Operation Not Allowed");
+     }
+  </script>
+ </head>
+ <body>
+  <h2> Demo on preventing cut, copy, paste, rc operations</h2>
+
+  <form action="login" method="post">
+    <label>UserName</label> <input type="text" id="tuna"> <br>
+    <label>Password</label> <input type="password" id="pwd"> <br>
+    <input type="submit" id="sb">
+  </form>
+	
+    <script>
+      //document.addEventListener("contextmenu", stopOpe);   valid
+
+      window.addEventListener("contextmenu", stopOpe );   //MRC
+      window.addEventListener("cut", stopOpe );	  //ctrl+x or cut option 
+      window.addEventListener("copy", stopOpe );		//ctrl+c or copy option
+      window.addEventListener("paste", stopOpe );  	//ctrl+v or paste option
+    </script>
+
+ </body>				
+</html>			
+
+	
+
+

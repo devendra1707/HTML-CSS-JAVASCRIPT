@@ -1,0 +1,32 @@
+<!-- Outer variables (global)
+		------------------------------
+		> Any variable is declared outside a function or in open area(inside <script>) is called "outer" variable.
+		> allocates the memory while begin program, de-allocates @end of program(means while closing tab/logout)
+		> outer we can access any where in program, these var are used to maintain comman data for all
+		> use "var" keyword for declaring outer variables		-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Fun Ex4</title>
+ </head>
+ <body>
+    <h2> Demo on Outer vars</h2>
+	<script> 
+		var x = 101;	//outer variable
+
+		 function fun1()   
+		 {
+			document.write("X	: "+ x +"<br>");
+		 }
+
+		 function fun2() 
+		 {
+			document.write("X is "+ x +"<br>");
+		 }
+
+		fun1();
+		fun2();
+		document.write("X Val  "+ x);
+  	</script>
+ </body>
+</html>

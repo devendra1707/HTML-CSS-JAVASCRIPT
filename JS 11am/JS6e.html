@@ -1,0 +1,32 @@
+<!-- example on JS new features -->
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>JS New4</title>
+ </head>
+<body>
+  <h2>Demo on Destructuring with skip</h2>
+  <script>
+    let names=["Meghav", "Vishu", "Pranavi", "Sarang", "SaiMohan", "Mr.Soumya" ,"Raba"];
+
+	let [a, b,  ,  ,c,  ,d]=names;  //<== Destructuring, it skips 2nd, 3rd and 5th indexes
+
+    document.write(a, "<br>");
+    document.write(b, "<br>");
+    document.write(c, "<br>");
+    document.write(d, "<br>");
+    document.write(names, "<br>");
+  </script>
+
+  <h2>Demo on Destructuring with rest</h2>
+  <script>
+    let names2=["Akshay", "Ankit", "Hashitha", "Hemanth", "Radha", "Nagaraju", "Rupa", "Sandeep"];
+	let [n1,n2, ...n_bal]=names2;  //<== Destructuring
+
+    document.write(n1, "<br>");
+    document.write(n2, "<br>");
+     document.write(n_bal, "<br>");
+    document.write(names2, "<br>");
+  </script>
+</body>
+</html>

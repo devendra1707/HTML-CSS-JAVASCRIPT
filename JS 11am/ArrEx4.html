@@ -1,0 +1,30 @@
+<!-- example on Array -->
+  <h2>example on finding max & min elements of Array</h2>
+  <script>
+    let a=new Array();
+    let n=prompt("enter no.of values");	 
+	//taking input
+    for(i=0; i<n; i++) {  
+       a[i] = parseInt( prompt("enter int value") );
+    }  
+
+    let max=a[0];   //assume   
+	let min=a[0]	//assume
+    for(i=1; i<n; i++)						 
+	{
+       if(a[i]>max)		//finding max value				
+           max=a[i];		//overwrites old max value
+
+       if(a[i]<min)		//finding min value				
+           min=a[i];		//overwrites old min value	 
+     }
+
+	document.write("Array Data :<br>"+ a +"<br>");
+    document.write("Max Ele "+ max,"<br>");
+    document.write("Min Ele "+ min);
+  </script>
+
+
+
+ 
+

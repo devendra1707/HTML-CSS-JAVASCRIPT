@@ -1,0 +1,24 @@
+<!-- example on Array methods -->
+  <h1> example on push & pop methods </h1>
+  <script>
+    const fruits=new Array();			
+    fruits.push("Apples");  //its adding ele @end of array	
+    fruits.push("Mangos");
+	fruits.push('Oranges'); 
+    let newLength = fruits.push('Papayas');
+
+    document.write(newLength +"<br>"); 
+    document.write("Fruites => " + fruits +"<br>" );
+ 
+	ele = fruits.pop();   //it returns last ele & remove last ele 
+    document.write("1st popped " + ele +"<br>");
+    document.write("2nd popped " + fruits.pop() +"<br>");
+    document.write("Fruites => " + fruits +"<br>");
+	fruits.push("Banana");
+	fruits.push("Grape");
+    document.write("Fruites => " + fruits +"<br>");
+   
+  </script>
+
+
+	 

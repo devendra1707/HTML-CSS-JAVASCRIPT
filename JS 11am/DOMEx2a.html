@@ -1,0 +1,57 @@
+<!-- example on DOM objects -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#div1{
+			width:180px;
+			background:#ffff33;
+			text-align:center;
+		}
+		.op{
+			font-size:24px;
+			font-family:Candara,Ebrima;
+		}
+	</style>
+    <script>
+	  window.setInterval("displayClock()", 1000);
+ 	  window.setInterval("changeBGColor()", 3000);
+
+	/* displaying digital clock */
+	  function displayClock() 
+      {
+		let d = new Date();
+		let h = d.getHours();
+		let m = d.getMinutes();
+		let s = d.getSeconds()
+		let st;
+		if( h>11 )
+			st =`${h%12} : ${m} : ${s} PM`;
+		else
+			st =`${h} : ${m} : ${s} AM`;
+
+		time.value = st;
+      }
+
+	/* changing background color of tag for every 4sec */
+     function changeBGColor()			
+	 {
+		// random() generates a random between 0 to 1
+		let c = parseInt( Math.random()*1000000 );
+	    document.getElementById("b").style.backgroundColor=`#${c}`;  //changing bg color				
+	    //document.getElementById("b").style.color=`#${c}`;
+	    console.log(c);
+     }
+	</script>
+</head>
+<body id="b">
+	<div id="div1">
+		<output id="dt" class="op"> </output> <br>
+		<output id="time" class="op"> </output>
+	</div>
+	<script>
+		let dd=new Date();
+		dt.value = `${dd.getDay()}-${dd.getMonth()}-${1900+dd.getYear()}`;
+	</script>
+</body>
+</html>

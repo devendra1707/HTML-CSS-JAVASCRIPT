@@ -1,0 +1,99 @@
+<!-- example on regular expressions with data validation -->
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Registration Page</title>
+   <style>
+	body{
+		background:linear-gradient(to right, #ff33ff, #0033ff);
+	}
+    .err{
+       color:#0000ff;
+       background:#ffff00;
+     }
+    input[type="submit"] {	
+		background:linear-gradient( #33ff00, #ffff00); 
+		border:none; 
+		width:165px; 
+		height:25px;
+	}
+    input[type="submit"]:hover{	
+		background:linear-gradient(#ffff00, #33ff00); 
+	}
+   </style>
+ </head>
+<body>
+  <form id="f1" action="a.jsp" method="post">
+    <h2 id="head1"> <u> Contact Details </u> </h2>
+	<label>UserName</label> <br>
+	<input type="text" id="tna"> <br> <output id="errna" class="err"> </output>
+  	<br>
+	<label>Password</label> <br>
+	<input type="password" id="tpw">  <output id="errpw" class="err"> </output>
+  	<br>
+	<label>Email Id</label> <br>
+	<input type="email" id="tmid" required> 
+  	<br>
+    <label>Mobile</label> <br>
+	<input type="text" id="tmob"> <output id="errmob" class="err"> </output>
+	<br>
+    <label>PinCode</label> <br>
+	<input type="text" id="tpin"> <output id="errpin" class="err"> </output>
+	<br>
+    <input type="submit" id="sb" value="Submit">
+  </form>
+
+  <script>
+    document.getElementById("f1").addEventListener("submit", checkData);
+
+    function checkData(f) 
+	{
+      let una=document.getElementById("tna").value;
+      //checking name with reg-expr with only alphabets
+      var nameexpr = /^[A-Za-z]*$/; 
+
+	  if( nameexpr.test(una)==false || una==""){
+         f.preventDefault();
+         document.getElementById("errna").innerHTML="Plz Enter Valid Name";
+      }else{
+		  document.getElementById("errna").innerHTML="";
+	  }
+
+    //digit only+ 10digits + start with 9/8/7/6 =====> valid 
+     //checking mobile number with reg-expr 
+      let mob=document.getElementById("tmob").value;
+      var mobexpr = /^[6789]\d{9}$/;    	
+	  if(mobexpr.test(mob)==false){					
+         f.preventDefault();
+         document.getElementById("errmob").innerHTML="Enter Valid Mobile Number";
+      }else{
+		  document.getElementById("errmob").innerHTML="";
+	  }
+
+      //checking pincode with reg-expr 
+      let pin=document.getElementById("tpin").value;
+      var pinexpr=/^[0-9]\d{5}$/;	
+	  if(pinexpr.test(pin)==false){
+         f.preventDefault();
+         document.getElementById("errpin").innerHTML=" Enter Valid Pincode";
+      }else{
+		  document.getElementById("errpin").innerHTML="";
+	  }
+
+
+		//PW should be   ==> one cap + one small + one digit +  _$@#   + min 8, max 20
+		//										 [A-Z]*		    [a-z]*			 [0-9]*	       [_$@#]*        {8,20}
+      //checking password with reg-expr 
+      let pw=document.getElementById("tpw").value;
+      var pwexpr=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[_$@#]).{8,20}$/;
+	  if(pwexpr.test(pw)==false){
+         f.preventDefault();
+         document.getElementById("errpw").innerHTML="Set a Valid Password";
+      }else{
+		  document.getElementById("errpw").innerHTML="";
+	  }
+    }
+  </script>
+</body>
+</html>
+

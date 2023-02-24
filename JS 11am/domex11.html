@@ -1,0 +1,59 @@
+<!-- example on element object -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Dom Demo</title>
+		<style>
+			button{
+				width:140px;
+				font-size:20px;
+			}
+			#div1{
+				margin:auto;
+				width:750px;
+			}
+		</style>
+ </head>
+ <body>
+   <h2>Demo on img filter options</h2>
+	<div id="div1">
+		<img id="img1" src="images/c.jpg"/>
+		<br>
+	   <button onclick="changeImage(1)">Blur</button>
+	   <button onclick="changeImage(2)">Brightness</button>
+	   <button onclick="changeImage(3)">Contrast</button>
+	   <button onclick="changeImage(4)">Grayscale</button>
+	   <button onclick="changeImage(5)">Invert</button> <br>
+	   <button onclick="changeImage(6)">Hue-rotate</button>
+	   <button onclick="changeImage(7)">Saturate</button>
+	   <button onclick="changeImage(8)">Sepia</button>
+	   <button onclick="changeImage(9)">Drop-shadow</button>
+	</div>
+   <script>
+		function changeImage(bt) 
+		{
+			let im = document.getElementById("img1").style;
+			if(bt===1)
+				im.filter="blur(2px)";
+			else if(bt===2)
+				im.filter="brightness(125%)";
+			else if(bt===3)
+				im.filter="contrast(135%)";
+			else if(bt===4)
+				im.filter="grayscale(100%)";
+			else if(bt===5)
+				im.filter="invert(100%)";
+			else if(bt===6)
+				im.filter="hue-rotate(180deg)";
+			else if(bt===7)
+				im.filter="saturate(8)";
+			else if(bt===8)
+				im.filter="sepia(100%)";
+			else if(bt===9)
+				im.filter="drop-shadow(8px 8px 10px green)";
+		 }
+   </script>
+  
+ </body>
+</html>
+

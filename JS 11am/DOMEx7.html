@@ -1,0 +1,60 @@
+<!-- example on document object -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>DOM Demo</title>
+  <style>
+    .c{
+      color:blue;
+      background-color:yellow;
+	}
+    #i{
+      color:yellow;
+      background-color:blue;
+	}
+  </style>
+ </head>
+ <body>
+    <p id="p1">Object finding methods</p>
+    <input type="text" name="t1"> <br>
+
+    <h1 id="i"> green apples </h1> <!-- mapped to id-selector -->
+
+    <label>Username</label> <br>
+	<label>Password</label> <br>
+
+    <h2 class="c">Oranges</h2>		<!-- mapped to class-selector -->
+    <h3 class="c">Mangos</h3>
+	<hr>
+
+    <script>
+		//creating object based on "id" attributes
+      let ob1 = document.getElementById("p1") 
+										/* new HTMLParagraphElement()
+											 init the above object with P tag details (settings & data)
+											 return that object	*/
+	      document.write("ob1 (id) => "+ ob1 +"<br>");
+
+	 //creating object based on "name" attributes
+      let ob2=document.getElementsByName("t1"); 
+      document.write("ob2 (name) => "+ ob2 +"<br>");
+
+	 //creating object based on "tagname" 
+	  let ob3=document.getElementsByTagName("label");
+      document.write("ob3 (tag)  => "+ ob3 +"<br>");
+
+	 //creating object based on class selector
+	  let ob4=document.getElementsByClassName("c");
+      document.write("ob4 (Class) => "+ ob4 +"<br>");
+
+	//creating object based on "css selector" (1st occurrenace)
+	  let ob5=document.querySelector("#i")		 
+      document.write("ob5 (sel) => " + ob5 +"<br>");
+
+	//creating object based on "css selector"  (all)
+	  let ob6=document.querySelectorAll("#i")			
+      document.write("ob6 (sel all) => " + ob6 +"<br>");
+
+    </script>
+ </body>
+</html>

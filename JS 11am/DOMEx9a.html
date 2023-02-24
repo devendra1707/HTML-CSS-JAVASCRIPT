@@ -1,0 +1,26 @@
+<!-- example on element object -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Dom Demo</title>
+ </head>
+ <body>
+   <h2>Demo on Element properties</h2>
+   
+   <h1 id="h">Green Apples</h1>
+   <button id="b">Apply</button> 
+	<hr>
+
+   <script>
+	  let ob=document.getElementById("h");	//ob is object/ref of h1 element	
+	  document.write(`class => ${ob} <br>`);
+	  document.write(`tag => ${ob.tagName} <br>`);
+	  document.write(`id => ${ob.id} <br>`);
+
+	  let ob2=document.getElementById("b"); //ob2 is object/ref of  button element
+	  document.write(`class => ${ob2} <br>`);
+	  document.write(`tag => ${ob2.tagName} <br>`);
+	  document.write(`id => ${ob2.id} <br>`);
+   </script>
+ </body>
+</html>

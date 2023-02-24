@@ -1,0 +1,45 @@
+<!-- example on Array methods -->
+<html>
+  <h2> example on indexOf(), lastIndexOf(), include(), sort(), reverse() and join() methods </h2>
+  <script>
+   const a = [65, 10, 20, 30, 10, 50, 40, 77, 10, 99, 88, 10];
+												    
+   /* indexof => searching ele (0th -> last  index)
+		found => index,   not found => -1,    found many times => 1st occurence  */
+
+   document.write( a +"<BR>");
+   document.write( a.indexOf(10) + "<br>"); //search starts from 0th index => 1
+   document.write( a.indexOf(10, 5) + "<br>"); //search starts from 5th index
+   document.write( a.indexOf(55) + "<br>"); // -1
+
+   document.write( a.lastIndexOf(10) +"<BR>"); // last occurenece of 10 => 11
+
+   document.write( a.includes(30) + "<br>"); //finding ele 
+   document.write( a.includes(37) + "<br>"); 
+
+   a.sort();  //sorting elements (by default asc order), sorted data it overwrites in the same array
+   document.write('After Sort => '+ a +"<br>");
+
+	let names=["Siva", "Venky", "Prakash", "Radhi", "Anu", "Raghu"];  //create array , stores names
+   document.write( names +"<br>");  //before sorting
+   names.sort();   //sorting names A to Z
+   document.write("after sort => "+ names +"<br>");  //after sorting
+
+   let b=[12,67,40,90,30]
+   document.write( b +"<br>");
+   b.reverse();  //re-arranging of data (R->L)  
+   document.write( b +"<br>");
+
+	//names.sort();  ==> A - Z order
+   names.reverse();   //reversed (Z -> A) desc
+   document.write( "desc order => " + names +"<br>");
+
+   document.write( a.join("<img src='a.jpg' width='30px' height='30px' align='middle'>") );
+					//a.join("$") ===> a[0]+"$"+a[1]+"$"+a[2]+"$"+a[3]...  
+   </script>			 
+</html>				 
+
+	 
+
+
+

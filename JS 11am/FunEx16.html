@@ -1,0 +1,55 @@
+<!-- example on functions with rest operator
+	function fun-name(...param1, param2, param3)  X
+	function fun-name(param1, ...param2, param3)  X
+	function fun-name(param1, param2, ...param3)	 valid
+
+	function fun-name(...param)
+	{
+		code
+	}
+
+		fun-name(val1, val2, val3 );
+ -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Fun Ex</title>
+   <script> 
+		//finding sum of n values
+/*		function total(...n)   //rest parameter
+		{
+		   let tot=0;
+		   for(let x of n) {
+				tot=tot+x;
+		   }
+		   return tot;
+		}			
+		OR		*/
+		function total(...n)   //rest parameter
+		{
+		   let tot=0;
+		   for(let x of n) {
+				if( typeof x === "number")
+					tot=tot+x;
+		   }
+		   return tot;
+		}	
+	</script>
+ </head>
+ <body>
+   <h2> Demo on rest parameter (since JS6) </h2>
+	<script>
+       document.write("Total Val : " + total(10,25,60) + "<br>");  //call1	
+       document.write("Total Val : " + total() + "<br>");  //call2
+       document.write("Total Val : " + total(1,3,5,8,6,9,4,2,7) + "<br>");  //call3
+       document.write("Total Val : " + total(10,"ram",20, 30,"sam",40,true) + "<br>");  //call3
+   </script>
+ </body>
+</html>				 
+
+
+
+
+
+
+

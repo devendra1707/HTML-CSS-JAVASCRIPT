@@ -1,0 +1,49 @@
+<!-- example on element object -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Dom</title>  
+ </head>
+<body id="b">
+   <h1 id="h">demo on adding & removing elements </h1>
+   <h2 id="head1" style="color:green;">Green Zone</h2> 
+   <h2 id="head2" style="color:#ff9900;">Orange Zone</h2>
+   <h2 id="head3" style="color:red;">Red Zone</h2>
+   <br> 
+   <button id="b1" onclick="document.getElementById('head1').remove()"> Rem Element </button>
+   
+   <button id="b2" onclick="newElement()"> Add Element </button>
+    <script>
+     function newElement()
+	 {
+       //creating element object & init
+       let newele=document.createElement("h1");	//==> <h1> </h1>
+       newele.innerHTML="Corona Virus";		//==> <h1>Corona Virus</h1>
+	   newele.style.color="red";		 //==> <h1 style="color:red..">Corona Virus</h1>
+       newele.style.backgroundColor="green";
+       newele.id="H11";		//<h1 id="h11" ...>
+	  //adding element to web page
+       document.getElementById("b").appendChild(newele);
+     }
+  </script>
+
+  <h2>Offer</h2>
+  <button id="bt" onclick="addTextbox()">Do U Have PromoCode</button>
+  <script>
+     function addTextbox()
+	 {
+       //creating element object & init
+       let tb=document.createElement("input"); // <input />
+       tb.setAttribute("type", "text");  //<input type="text">
+       tb.id="tpc";   //<input type="text" id="tpc">
+        tb.name="promo";   //<input type="text" id="tpc" name="promo">
+		tb.style.color="blue";
+       //adding element to web page
+       document.getElementById("bt").appendChild(tb);
+
+	    document.getElementById("bt").removeAttribute("onclick");
+     }
+  </script>   
+</body>
+</html>
+

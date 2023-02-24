@@ -1,0 +1,32 @@
+<!-- example on exception handling -->
+<!DOCTYPE html>
+<html>
+  <head>
+	<script type='text/javascript'>
+	  function div()
+	  {
+	   try
+	   {			 
+         let x = eval(t1.value);  
+		 let y = eval(t2.value);
+         let r = x/y;
+		 //alert("Div "+res);		
+		res.value = "Div "+r;
+	   }catch(exp){
+          //alert("Plz enter number only");
+		  res.value = "Plz enter number only";
+       }
+	 }
+	</script>
+ </head>
+ <body>
+    <h2>demo on try-catch blocks</h2> 
+	<label>First Number</label>
+	<input type="text" id="t1"> <br>
+
+	<label>Second Number</label>
+	<input type="text" id="t2"> <br>
+     <button onclick="div()">Division</button> <br>
+	<output id="res"></output>
+ </body>
+</html>

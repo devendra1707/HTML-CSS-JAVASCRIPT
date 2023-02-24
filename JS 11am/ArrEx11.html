@@ -1,0 +1,35 @@
+<!-- example on for in loop, for of loop and foreach() method (JS6 version) -->
+<html>
+  <h2> example on for in </h2>
+  <script>
+	const a=[ ];		//it creates array
+	a.push(10);		//or  a.unshift(10);		or 	a[0]=10;
+	a.push(25);
+	a.push(78);
+	a.push(30);
+	a.push(55);
+	a.push(34);								 
+ 	for(let index in  a){	  //getting index only
+      document.write( index +"&nbsp;&nbsp;"+ a[index] +"<br>" );
+	}
+  </script>
+
+  <h2> example on for of </h2>
+  <script>
+	const b=[1,2,3,4,5,6,7,8,9];
+    let s=0;           
+	for(let ele of b) {	  //getting data 
+      document.write( ele + "&nbsp;&nbsp;" );
+      s=s+ele;
+    }
+    document.write("<br> Sum of Ele : "+s);
+  </script>
+
+  <h2> example on foreach method </h2>
+  <script>
+	var names=["siva","prakash","radhi","pinky","nani","rama"];
+
+                                  //functional expression
+	names.forEach( function(ele){ document.write(ele+" "); }  ); //extract/fetched
+    </script> 
+</html>

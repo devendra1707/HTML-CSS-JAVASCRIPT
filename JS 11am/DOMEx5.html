@@ -1,0 +1,47 @@
+<!-- window methods -->
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>DOM Ex5</title>
+   <script>
+    var mywin;
+
+    function openwin()
+    {
+       //mywin = window.open("", "", "width=300, height=300");  
+      //mywin=window.open("e:/html11am/ex24.html", "", "width=400, height=300"); 
+      //mywin=window.open("http://www.aha.video", "MyWindow", "width=500, height=500"); 
+	  //mywin = window.open("images/baby.jpg", "", "width=500, height=500");
+	
+	 mywin=window.open("", "", "width=500, height=300, screenX=400, screenY=200, resizable='off'");
+       //designing begins
+       mywin.document.write("<h1>im popup/child window</h1>");
+       mywin.document.write("<form action='test' method='post'>");
+	   mywin.document.write("<h2>Login</h2>");
+	   mywin.document.write("<label>UserName</label>");
+	   mywin.document.write("<input type='text' name='tuna'><br>");
+	   mywin.document.write("<label>Password</label>");
+	   mywin.document.write("<input type='password' name='tpwd'><br>");
+	   mywin.document.write("<input type='submit' name='sb' value='Login'>");
+	   mywin.document.write("</form>");    //designing ends 
+    }
+
+    function closewin()
+    {
+      mywin.close();
+    }
+   </script>
+
+ </head>
+ <body>
+    <h2>demo on open() & close() </h2>
+    <button onclick="openwin()">Open win</button>
+    <button onclick="closewin()">Close Window</button>
+ </body>
+</html>
+
+
+
+
+
+			 

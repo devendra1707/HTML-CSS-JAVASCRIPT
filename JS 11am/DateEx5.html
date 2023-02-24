@@ -1,0 +1,22 @@
+<!-- example on setInterval() 
+this method executing sepcific task @reguler intervals (its repeted execute) 
+Syn:
+		window.setInerval(task, interval);    
+						interval => mi.sec
+						task => function OR functional-ref
+-->
+
+<html>
+ <head>
+	<script type='text/javascript'>
+	 function fun1()
+	 {
+       window.setInterval( function(){ console.log("Hello") }, 3000);	//every 5sec it execute fun-ref
+	 }
+	</script>			
+</head>          
+<body onload="fun1()">  	<!-- <body onload="fun1()">  -->
+	<p>Refresh the page to load the related url...</p>
+	<p>once you refresh it takes a few seconds...</p> 
+</body>
+</html>

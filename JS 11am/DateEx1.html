@@ -1,0 +1,27 @@
+<!-- example on date functions -->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Date Funs</title>
+ </head>
+ <body>
+   <h2> demo on date object init </h2>
+   <script type='text/javascript'>
+
+    let d1=new Date(); //current system date & time
+
+	let d2=new Date(100000000000);  //misec
+
+	let d3=new Date("30-aug-2021");
+
+	let d4=new Date(2020, 3, 30, 10, 30, 40, 600); //y,m,d,hr,min,sec,misec
+											//months 0 - 11
+											//day  0 - 6
+	document.write(d1+"<br>");
+	document.write(d2+"<br>");
+	document.write(d3+"<br>");
+  	document.write(d4+"<br>");
+  </script>
+ </body>
+</html>
+

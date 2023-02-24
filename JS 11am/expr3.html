@@ -1,0 +1,33 @@
+<!-- example on regular expressions with data validation -->
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Login</title>
+ </head>
+<body>
+  <form id="f1" action="a.jsp" method="post">
+	<label>UserName</label> <br>
+	<input type="text" id="tna"> <br> <output id="errna" class="err"> </output>
+  	<br>
+    <input type="submit" id="sb" value="Submit">
+  </form>
+  <script>
+    document.getElementById("f1").addEventListener("submit", checkData);
+
+    function checkData(f) 
+	{
+      let una=document.getElementById("tna").value;
+      //checking name with reg-expr with only alphabets
+      var nameexpr = /^[A-Za-z]*$/;
+	  if( nameexpr.test(una)==false || una==""){
+         f.preventDefault();
+         document.getElementById("errna").innerHTML="Plz Enter Valid Name";
+      }else{
+		  document.getElementById("errna").innerHTML="";
+	  } 
+    }
+  </script>
+</body>
+</html>
+
+	

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script>
+
+	 window.setInterval("fun1()", 5000);
+     function fun1()			
+	 {
+		var c=parseInt( Math.random()*1000000 );
+	    document.getElementById("d").style.backgroundColor="#"+c;		
+	    console.log(c);
+     }
+
+	  window.setInterval("fun2()", 1000);
+	  function fun2() 
+      {
+		var d=new Date();
+		var st=d.getHours()+" : "+d.getMinutes()+" : "+d.getSeconds();
+		res.value = st;
+      }
+
+	</script>
+</head>
+<body>
+   <div id="d" style="width:100%; height:500px; background:blue; text-align:center;">
+			Hey, Color Changed!!!
+   </div>
+	<output id="res" style="color:red;font-size:30px;"> </output>
+</body>
+</html>

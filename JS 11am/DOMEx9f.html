@@ -1,0 +1,43 @@
+<!-- example on element object -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Dom</title>
+ </head>
+ <body>
+   <h1> demo on attribute methods </h1>
+   <p id="p1">
+ You may copy the evaluation version of this software and documentation as you wish, and give exact copies of the original evaluation version to anyone, and distribute the evaluation version of the software and documentation in its unmodified form via electronic means. But you should not charge or requesting donations for any such copies however made and from distributing the software and/or documentation with other products without the author's written permission.
+	</p>
+
+   <button onclick="document.getElementById('p1').setAttribute('align','right')"> Right </button>
+   <button onclick="document.getElementById('p1').setAttribute('align','left')">  Left </button>
+   <button onclick="document.getElementById('p1').setAttribute('align','center')"> Center </button>
+   <button onclick="document.getElementById('p1').setAttribute('align','justify')"> Justify </button>
+    <hr>
+
+   <img id="i1" src="a.jpg" width="200px" height="200px"/>
+   <button onclick="changeImage()"> change img </button>
+   <script>
+		function changeImage()
+		{
+		  let i1=document.getElementById("i1");  //ref of i1
+		  i1.setAttribute("src", "b.jpeg"); //changing attribute
+		  //or		i1.src="b.jpeg"
+		}
+	</script>
+	<br>
+  <script>
+     //retrieving attribute
+	 document.write( document.getElementById("i1").getAttribute("src") );
+									//or    document.getElementById("i1").src
+
+     //removing attribute
+	  document.getElementById("i1").removeAttribute("width");
+	  document.getElementById("i1").removeAttribute("height");
+   </script>
+
+  
+ 
+ </body>
+</html>

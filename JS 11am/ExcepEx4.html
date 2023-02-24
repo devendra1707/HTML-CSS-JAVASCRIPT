@@ -1,0 +1,23 @@
+<!-- example on exception handling -->
+<!DOCTYPE html>
+<html>
+ <head>
+ </head>
+ <body>
+    <h2>demo on throw statement</h2> 
+     <script type='text/javascript'>
+		let age=prompt("Enter Age")
+		try{
+			if(age<18) {
+				throw "Age not Valid for Voting"; 
+			}
+            document.write("welcome to voting<br>");
+            document.write("Continue ur voting operation<br>");
+		} catch(err){
+			document.write(err);
+		} 
+	</script>
+ </body>
+</html>
+
+

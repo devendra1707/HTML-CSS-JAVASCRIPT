@@ -1,0 +1,39 @@
+<!-- example on Array -->
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>ArrayEx2</title>
+ </head>
+<body>  
+  <h2>creating Array with new kw</h2>	 
+  <script>																 
+    //2nd Approch array creation				
+   let a = new Array();
+    //storing data
+    a[0]=15; 
+    a[1]=45;
+    a[2]=89;
+
+    document.write( a.length +"<br>");
+    //document.write( a + "<br>");	OR
+    for(i=0; i<a.length; i++){  
+       document.write(a[i] + "<br>");  
+    }  
+   </script>
+
+  <h2>creating Array with constructor</h2>
+  <script>
+    //2nd Approch array creation and init
+    let names = new Array("ram","sam","rahim","singh");
+    document.write( names.length +"<br>");
+    document.write( names + "<br>");
+  </script>
+
+</body>
+</html>
+
+
+				
+
+
+

@@ -1,0 +1,28 @@
+<!-- shadowing
+	If a same-named variable is declared inside the function then it shadows the outer one. 
+	For Example, in the code below the function uses the local n. The outer one is ignored -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Fun Ex5</title>
+ </head>
+ <body>
+   <h2> Demo on shadowing </h2>
+   <script> 
+	var n = 100;	//outer (acutal)
+
+	function display()    
+    {
+		let n = 200;     //local variable (shadow)			
+		document.write("N: " + n + "<br>");  //it always subtitues local (shadow)
+	    document.write(n*12, "<br>");
+		document.write("N: " + this.n + "<br>");  //it always subtitues outer
+				//this ==> address current memory block
+	 }
+  	display();
+    document.write("N ==> " + n + "<br>"); //this not req
+   </script>
+ </body>
+</html>
+
+	

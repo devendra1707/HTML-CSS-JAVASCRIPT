@@ -1,0 +1,46 @@
+<!-- example on Array methdos -->
+<html>
+  <h2> example on deleting, updating & inserting ele</h2>
+  <script>
+   let colors = ["Red", "Green", "Blue"];  //init
+   document.write( colors + "<br>"); 
+  /* splice => it remove ele's
+				 => it inserting ele's
+				 => it updates ele's		*/				 
+  
+	//deleting array elements - 2params
+   let x=colors.splice(0, 1); //Remove the 0th ele   (starting-pos, no.of ele)
+   document.write( x + "<br>");  //del eles
+   document.write("After Del => "+ colors + "<br>");   //bal eles
+
+   let a=[10, 20, 30, 40, 50, 60, 70];
+   document.write("A "+ a + "<br>");	
+   a.splice(2, 3); // Removes 2,3,4 ele's
+   document.write("A after del => "+ a + "<br>"); 
+
+	//inserting elements into spe pos of array
+   var colors1 = ["Green", "Blue", "Red", "Cyan"]
+   colors1.splice(2, 0, "Pink"); //it not removes any ele but insert "Pink" @2 pos
+   document.write("after inserting => "+ colors1 + "<br>"); 
+   colors1.splice(0, 0, "Black","Yellow"); //it also inserts both elements @0 pos
+   document.write("after inserting => "+ colors1 + "<br>"); 
+
+	//updating array elements
+   //colors1 = [Black,Yellow,Green,Blue,Pink,Red,Cyan]
+   temp = colors1.splice(1, 2, "Purple", "Voilet"); // it removes 1,2 ele's and insert "Purple", "Voilet"
+   document.write("After update => "+ colors1 + "<br>"); 
+   document.write(temp + "<br>");
+  </script>
+</html>
+
+		
+
+
+
+
+
+
+
+
+
+

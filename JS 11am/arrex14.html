@@ -1,0 +1,20 @@
+Sometimes you may need to take an array and apply some procedure to its elements so that you get a new array with modified elements.
+
+Instead of manually iterating over the array using a loop, you can simply use the built-in Array.map() method.
+
+The Array.map() method allows you to iterate over an array and modify its elements using a callback function. The callback function will then be executed on each of the array's elements.
+
+let circles = [ 10, 20, 30 ];
+
+let areas = [];  // to store areas of circles
+let area = 0;
+for (let i = 0; i < circles.length; i++) {
+    area = PI * circles[i] **2 ;
+    areas.push(area);
+}
+ 
+let areas = circles.map(function(radius){ return PI * radius **2; });
+
+
+let numbers = [16, 25, 36];
+let results = numbers.map(Math.sqrt);

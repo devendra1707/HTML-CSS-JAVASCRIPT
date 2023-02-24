@@ -1,0 +1,28 @@
+<!-- example on disable mouse right click -->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Events Demo</title>
+  <script>
+     function stopOpe(obj)
+     {
+        obj.preventDefault();
+        alert("Mouse Right Not Allowed");
+     }
+  </script>
+ </head>
+ <body>
+    <h2 id="head1"> Demo on contextmenu event </h2>
+  <form action="abc" method="post">
+    <label>UserName</label> <input type="text" id="tuna"> <br>
+    <label>Password</label> <input type="password" id="tpwd"> <br>
+    <input type="submit" id="sb">
+ </form>
+    <script>
+      //document.getElementById("tpwd").addEventListener("contextmenu", stopOpe );
+      document.addEventListener("contextmenu", stopOpe );     //MRB clicked
+    </script>
+  </form>
+ </body>
+</html>
+

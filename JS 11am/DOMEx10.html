@@ -1,0 +1,58 @@
+<!-- example on applying common styles on multiple elements -->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Element Object</title>
+ </head>
+ <body class="c">
+		<h2 class="c">Login</h2>
+		<label class="c">Username</label> <br>
+		<input class="c" type="text" id="una"/> <br>
+
+		<label class="c">Password</label> <br>
+		<input class="c" type="password" id="pw"/> <br>
+		<button class="c">Log In</button>
+		<BR> <BR>
+		<!--	<input type="color" id="colour" onchange="change()"> 	-->
+		<button onclick="darkMode()">Dark mode</button>
+		<button onclick="liteMode()">Lite mode</button>
+		
+		<script>
+			function darkMode()
+			{
+				let elements = document.querySelectorAll(".c");	
+				elements.forEach( (ele) => { 
+																	ele.style.color="#ffffff"; 
+																	ele.style.backgroundColor="#000000"; 
+																} );
+			}
+			function liteMode()
+			{
+				let elements = document.querySelectorAll(".c");	
+				elements.forEach( (ele) => { 
+																	ele.style.color="#000000"; 
+																	ele.style.backgroundColor="#ffffff"; 
+																} );
+			}
+
+			function change()
+			{
+				let elements = document.querySelectorAll(".c");		// #id  or tag
+		/*		elements.forEach( function(ele){
+															ele.style.color='#ff0000';
+															ele.style.backgroundColor='#ffff66';
+													}
+												);
+							OR	
+				elements.forEach( (ele) => { ele.style.color='#ff0000'; ele.style.backgroundColor='#ffff66'; } );
+					OR
+
+				for(let ele of elements) {
+					ele.style.color='#ff0000'; 
+					ele.style.backgroundColor='#ffff66'; 
+				}			*/
+				elements.forEach( (ele) => { ele.style.color=colour.value; } );
+			}
+		</script>  
+ </body>
+</html>

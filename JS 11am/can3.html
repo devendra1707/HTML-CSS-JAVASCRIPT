@@ -1,0 +1,26 @@
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Canvas</title>
+ </head>
+ <body>
+    <h2>demo on canvas drawing</h2>
+    <p>Image to use:</p>
+    <img id="i" src="a.jpg" width="200" height="200">
+
+    <p>Canvas to fill:</p>
+    <canvas id="can" width="220" height="220" style="border:5px solid blue"></canvas>
+
+    <button onclick="copyImage()">Copy Img</button>
+
+    <script>
+		function copyImage() 
+       {
+		  var c = document.getElementById("can");
+		  var ctx = c.getContext("2d");
+		  var img = document.getElementById("i");
+		  ctx.drawImage(img,10,10, 200, 200);
+		}
+	 </script>
+  </body>
+</html>

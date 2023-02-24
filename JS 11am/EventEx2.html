@@ -1,0 +1,34 @@
+<!-- example on name & phone number check @during data typing (data validation)-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Events Demo</title>
+  <script>
+     function checkName(fullName)  
+     {		 
+        let ch = fullName.which;   //returns ASCII of key pressed     
+		//	  		       'A'               'Z'		          'a'                 'z'				space
+        if( ! ((ch>=65 && ch<=90) || (ch>=97 && ch<=122) || ch==32) ) //otherthan alpha
+              fullName.preventDefault();  //it stops typing/displaying
+		      console.log(ch);
+     }			
+  </script>	
+ </head>
+<body>
+     <h1 id="head1"> Demo on KeyPress event </h1>
+     <label>FullName</label> <input type="text" id="fullName"> <br> <br>
+     <label>Phone</label> <input type="text" id="phone" maxlength="10">  <!-- implicit validation -->
+
+    <script>
+      document.getElementById("fullName").addEventListener("keypress", checkName); //when we type any key in keyboard
+      document.getElementById("phone").addEventListener("keypress",   function(ph){
+																let ch = ph.which;   //returns ASCII of key pressed     																	       //    0                9				 
+																if( ! (ch>=48 && ch<=57)) { //otherthan digits
+																				ph.preventDefault();
+																				console.log("Invalid Num");
+																}
+															} ); 
+   </script>
+ </body>
+</html>					
+					 

@@ -1,0 +1,34 @@
+<!-- example on Array -->
+  <h2>example on Array</h2>
+	<label>Enter Number</label>
+	<input type="text" id="txtNum"> &nbsp;&nbsp;
+    <button onclick="addItem()">Add Ele</button> &nbsp;&nbsp;
+    <button onclick="showItems()">Show Eles</button> <br> <br>
+
+	<output id="dat"> </output> <bR> <bR>
+	<output id="result"> </output>
+
+  <script>
+    var data = [];  //for data maintance
+	var i=0;
+
+	function addItem()
+	{
+		data[i] = parseInt( txtNum.value );		 
+		i++;
+		txtNum.value="";
+		txtNum.focus();		
+	}
+
+    function showItems()
+	{
+		let total=0;
+		for(let ele of data)
+			total+=ele;		//tot=0+data[0]		tot=tal+data[1]		tot=tot+data[2]
+		
+		dat.value=data;
+		result.value="Sum Of Array Elements : "+total;
+	}
+  </script>
+
+ 

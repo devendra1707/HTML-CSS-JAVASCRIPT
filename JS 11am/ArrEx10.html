@@ -1,0 +1,18 @@
+<!-- example on Array of Arrays -->
+<html>
+  <h2> example on Array of Arrays </h2>
+  <script>
+	let a=[ [10,"ram",5.7], [11,"sam",5.8,80,29] ];		//VArrays			
+
+    document.write( a +"<br>");
+
+    for(i=0; i<a.length; i++)   //row ind
+	{
+      for(j=0; j<a[i].length; j++) //cols ind
+	  {
+	     document.write( a[i][j] +"&nbsp;&nbsp;" );
+      }
+      document.write("<br>");
+    }
+ </script>
+</html>

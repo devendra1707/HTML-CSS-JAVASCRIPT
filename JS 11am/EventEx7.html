@@ -1,0 +1,42 @@
+<!-- example on validating password @time submiting form -->
+<!DOCTYPE html>
+<html>				
+ <head>
+  <title>Events Demo</title>	
+ </head>
+ <body>
+	<form id="frm1" action="test" method="post">
+		<label>Set new Password</label>
+		<input type="password" id="tpw"> <output id="msg"> </output>
+	   <br>
+	   <input type="submit" value="Finish">
+	</form>
+   <script>
+     document.getElementById("frm1").addEventListener("submit", validatePW );
+
+	//pw should @least 1alpha, 1digit and 1symbol (@ or $ or _ or #)
+     function validatePW(frm)
+	 {
+       let pw=tpw.value;  //or document.getElementById("tpw").value;
+       let alpha=false, digit=false, symbol=false;
+
+	   for(i=0; i<pw.length; i++)			 
+       {																							
+         ch = pw.charAt(i);  //it return char available @spe index
+         if( (ch>='A' && ch<='Z') || (ch>='a' && ch<='z') )
+             alpha=true;  
+         else if(ch>='0' && ch<='9')
+            digit=true;
+         else if(ch=="$" || ch=="@" || ch=="_" || ch=="#")
+            symbol=true;
+        }
+
+       if(alpha==false || digit==false || symbol==false) {
+	       msg.value="plz choose strong pw, try mix of alpha, digit, $, @, _ and #";
+		   frm.preventDefault();
+		}
+	 }
+   </script>
+ </body> 
+</html>
+

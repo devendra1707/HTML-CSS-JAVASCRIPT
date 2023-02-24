@@ -1,0 +1,33 @@
+<!-- example on moving smile -->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Events Demo</title>
+ </head>
+ <body id="b1">
+    <img id="img1" src="smile1.jpg" width=30 height=30>	
+
+   <script>
+	  //document.addEventListener("mousemove", moveFun);		OR
+	  window.addEventListener("mousemove", moveFun);  //==> moveFun(window);
+
+	  function moveFun(win)  //window as a param
+      {
+        let img1=document.getElementById("img1").style;
+        let x=win.pageX;  //mouse pointer co-ordinates
+        let y=win.pageY;
+        console.log(x, y);
+	    img1.marginLeft=`${x}px`;		
+        img1.marginTop=`${y}px`;	
+     }
+   </script>
+ </body>
+</html>
+
+
+
+		
+
+
+
+

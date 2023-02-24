@@ -1,0 +1,23 @@
+<!-- example on Array of Arrays-->
+<html>
+  <h1> example on Array of Arrays</h1>
+  <script>
+	let a = [  [11,22] , [10,20], [12,23]  ];    //assume 2D
+
+    document.write( a  +"<br>");
+	document.write( a.length +"<br>");   // no.of arrays (it returns no.of rows)
+	document.write( a[0].length +"<br>"); // no.of elements inner array (it returns no.of cols)
+
+	for(i=0; i<3; i++) //outer array (row index)
+	{
+      for(j=0; j<2; j++) //inner array (col index)
+	  {
+	     document.write( a[i][j] + "&nbsp;&nbsp;");
+      }
+      document.write("<br>");
+    }	
+
+ </script>
+</html>
+
+

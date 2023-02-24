@@ -1,0 +1,36 @@
+<!--  example on local vs outer declarations -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Fun Ex6</title>
+   <script> 
+      var x=111;  //outer 
+   </script>
+ </head>
+ <body>
+    <h2> Demo on local Vs outer vars</h2>
+	<script> 
+	 function fun1()   //def/dev
+     {
+	  let a = "Apple";     //local variable
+	  document.write("msg from fun1:<br>");
+	  document.write("A	:" + a +"<br>");
+      document.write("X ==> "+ x +"<br>");
+  	 }
+
+	 function fun2() 
+     {
+	  let b = "Mango";     //local variable
+	  document.write("msg from fun2:<br>");
+	  document.write("B	: " + b +"<br>");
+      document.write("X ==> "+ x +"<br>");
+	 }
+	</script> 
+
+	<script>
+		fun1();
+		fun2();
+		document.write("<br> X ==> "+ x +"<br>");
+  	</script>
+ </body>
+</html>

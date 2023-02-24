@@ -1,0 +1,38 @@
+<!-- example on JS new features (array merge) -->
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>JS New2</title>
+ </head>
+<body>
+  <h2>Demo on ... (rest) operator with array</h2>
+  <script>
+    const redZones = ["Hyd","Vikarabad","SuryaPet","Medchal","Karimnagar"];
+    const orangeZones = ["Khammam","Jagtial","Rangareddy"];
+    const greenZones = ["Sidddipet", "Kothagudem", "Wanaparthy", "Bhuvanagiri" ];
+
+	/*	let allZones=new Array();
+	for(i=0; i<redZones.length; i++)
+			allZones[i]=redZones[i];
+    
+    j=allZones.length;
+	for(i=0; i<orangeZones.length; i++, j++)
+			allZones[j]=orangeZones[i];
+
+    j=allZones.length;
+	for(i=0; i<greenZones.length; i++, j++)
+			allZones[j]=greenZones[i];			*/
+
+    //appending 3 arrays and forming into sinlge array
+    let allZones=[...redZones, ...orangeZones, ...greenZones];
+
+	document.write( greenZones, "<br>" );
+	document.write( orangeZones, "<br>" );
+	document.write( redZones, "<br>" );
+	document.write( allZones, "<br>" );
+  </script>
+</body>
+</html>
+
+
+	

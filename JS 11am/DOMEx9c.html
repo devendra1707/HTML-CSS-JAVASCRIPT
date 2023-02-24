@@ -1,0 +1,35 @@
+<!-- example on element object -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Dom Demo</title>
+ </head>
+ <body>
+   <h2>Demo on element properties</h2>
+  
+   <h1 id="head1"> Demo on Style Property </h1>
+   <button onclick="changeStyle()">Change Style</button>
+
+   <script>
+    function changeStyle()
+    {
+		//document.getElementById("head1").style.color="red";	OR
+
+		 let hh1=document.getElementById("head1");	//OR
+		 //let hh1=document.getElementById("head1").style; 
+
+		 hh1.style.color="green";		
+		 hh1.style.fontSize="40px";		
+		 hh1.style.fontFamily="Chiller";				
+		 hh1.style.background="yellow";
+		 hh1.style.width="700px";
+		 hh1.style.border="5px double red";
+		hh1.style.textAlign="center";
+
+		 console.log( hh1.style.color,     hh1.style.width );
+     }
+   </script>
+  
+ </body>
+</html>
+

@@ -1,0 +1,26 @@
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Canvas</title>
+ </head>
+ <body>
+    <h2>demo on canvas drawing</h2>
+    <canvas id="can" width="500" height="400" style="border:5px solid blue"></canvas>
+
+    <script>
+    	  var c = document.getElementById("can");
+		  var ctx = c.getContext("2d");
+          var col = ctx.createLinearGradient(0,10,150,0);
+          col.addColorStop(0, "#ff00cc");
+          col.addColorStop(1, "#0000ff");
+          ctx.fillStyle=col;
+		  ctx.fillRect(10,10, 200, 200);
+
+          col.addColorStop(0, "green");
+          col.addColorStop(1, "yellow");
+          ctx.fillStyle=col;
+  		  ctx.font = "50px Pristina";
+		  ctx.fillText("Canvas Drawing",50,300);
+	 </script>
+  </body>
+</html>

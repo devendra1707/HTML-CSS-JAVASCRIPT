@@ -1,0 +1,51 @@
+<!-- example on hiding/displaying element -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .div1{
+		width:300px;
+        background-color:#ff9966;
+		padding:15px;
+        visibility: hidden;		 
+     }				
+</style>
+</head>				 
+<body>
+		<fieldset style="width:600px;">
+			<legend>Marital status:</legend>
+			<input type="radio" id="ms1" name="ms" value="single" checked> <label>Single</label>
+			&nbsp;&nbsp;
+			<input type="radio" id="ms2" name="ms" value="married"> <label>Married</label>
+			&nbsp;&nbsp;
+			<input type="radio" id="ms3" name="ms" value="divorced"> <label>Divorced</label>
+			&nbsp;&nbsp;
+			<input type="radio" id="ms4" name="ms" value="widowed"> <label>Widowed</label>
+			&nbsp;&nbsp;
+			<input type="radio" id="ms5" name="ms" value="nun"> <label>Never Marring</label>
+		</fieldset>	
+
+		<div  id="d1" class="div1">
+			<label>Date of Marriage</label> <br>
+			<input type="date" id="dom" name="dom"> <br>
+			<label>Spouse Name</label> <br>
+			<input type="text" id="sp_name" name="sp_name">
+		</div>
+     
+	<script>
+		let divtag = document.getElementById('d1').style;
+
+		//hiding complete div tag
+		document.getElementById('ms2').onclick = () => { divtag.visibility='visible'; };
+
+		//showing complete div tagt
+		document.getElementById('ms1').onclick = () => { divtag.visibility='hidden'; };
+		document.getElementById('ms3').onclick = () => { divtag.visibility='hidden'; };
+		document.getElementById('ms4').onclick = () => { divtag.visibility='hidden'; };
+		document.getElementById('ms5').onclick = () => { divtag.visibility='hidden'; };
+	</script>
+
+</body>
+</html>
+
+

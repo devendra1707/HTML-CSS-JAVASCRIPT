@@ -1,0 +1,24 @@
+<!-- example on exception handling -->
+<!DOCTYPE html>
+<html>
+  <head>
+	<title> Exceptions</title>
+ </head>
+ <body>
+    <h2>demo on finally block</h2> 
+   <script>
+		try{
+		   let x=prompt("Enter number to evaluable");
+		   document.write("X Val "+ eval(x), "<br>" );
+		}
+		catch(e){
+			document.write("Numbers Only :" + e.description, "<br>"); 
+		}
+		finally{
+   		   document.write("Msg From Finally Block<br>");									
+		}
+	</script>
+    <h1>Hello</h1> 
+ </body>
+</html>   
+					

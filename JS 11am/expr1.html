@@ -1,0 +1,32 @@
+<!-- example reg expr -->
+<input type="text" id="na"> 
+<input type="button" id="b" value="Check Data">
+<script>
+	document.getElementById("b").onclick = () => {
+																							let name = na.value;
+																							let expr = /siva/i;   //OR  let expr = new RegExp(/siva/); 
+																							alert( expr.test( name ) )
+																						} ;
+</script>
+
+ 		<!--
+		const refvar = /expr/;										data pattern/search critiria
+		const refvar = new RegExp(/expr/);
+
+			refvar.test(data)  is method of regexpr 
+								=> true
+								=> false			
+
+					/text/ => matching name or not
+					[ ] => data should place here				[akz]			 
+					 -  => data range									[a-z]   
+					without - => its not range, it takes as in							 
+					\w => word			
+					\d => only digit
+					/i => case-insensitive 
+					/g => global (means any in data)			
+			     
+                    *  => any length
+					{count} => length spe (no.of chars)
+					{MIN, MAX} => range spe (min leng, max len) 
+	-->			

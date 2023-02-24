@@ -1,0 +1,56 @@
+<!-- example on event handling -->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Events Demo</title>
+	<style>
+		#div1{
+			width:300px;
+			text-align:center;
+			background:#ff9999;
+		}
+	</style>
+  <script>
+	 const imags=["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.png", "g.jpg", "h.jpg"];
+	 var index=0;
+	 function changeImage()	//changing image
+      {
+		if(index>7){	 
+            index=0; //re-init
+		}
+		document.getElementById("image1").src="images/"+imags[index];
+		index++;
+      }
+  </script>
+ </head>
+ <body>
+    <h2>Demo on multiple events</h2>
+	<img id="image1" src="images/baby.jpg" width="80%" height="400px"/>
+
+    <div id="div1">
+        <h1>Demo on mouse over/out events</h1>
+		<img id="image2" src="images/smile1.png"/>
+	</div>
+
+    <script>
+    /* let ob=document.getElementById("image1");
+       ob.addEventListener("dblclick", changeImage);  OR */
+	  document.getElementById("image1").addEventListener("dblclick", changeImage);		
+
+	  let img2 = document.getElementById("image2");
+ 	 //mouse enter
+  	  img2.onmouseover =  () => {
+														img2.src="images/smile2.png"; 																													//console.log("mouseover"); 
+													};
+	 //mouse exited
+  	  img2.onmouseout =  () => {
+														img2.src="images/smile1.png"; 																													//console.log("mouseout"); 
+													};
+   </script>
+ </body>
+</html>			 
+		
+ 
+
+
+
