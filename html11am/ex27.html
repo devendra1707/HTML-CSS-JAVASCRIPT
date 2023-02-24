@@ -1,0 +1,117 @@
+<!-- example on css tables 
+		nth-child() ==> to apply styles on pertic/some tags
+				tag:nth-child(N/even/odd) {
+							.......
+				}
+			h1:nth-child(even) { ...... }  2-h1, 4-h1, 6-h6...
+			img:nth-child(odd) { ...... }  1-img, 3-img, 5-img...
+
+		border-collapse ==> to remove internal border/gap between row-row & col-col
+							border-collapse:collapse;
+
+		ro draw borders:
+			border-left:2px solid red;
+			border-rigth:2px solid red;
+			border-top:2px solid red;
+			border-bottom:2px solid red;
+																border:2px solid red;
+ -->
+<!DOCTYPE html>
+<html lang="en">		 
+	<head>
+		<title>Ex26</title>	
+		<style> 
+			img{
+				width:20px;
+				height:20px;
+			}
+			table{
+				border-collapse:collapse;
+			}
+			tr{
+				border-bottom:2px solid red;
+			}
+			tr:nth-child(odd){
+				background-color:#ffccff;
+				border-collapse:
+			}
+			tr:nth-child(even){
+				background-color:#ffff99;
+			}
+			tr:nth-child(1){
+				background-color:#3300ff;
+				color:white;
+				font-size:18px;
+			}
+			tr:hover{
+				background-color:black;
+				color:white;
+			}			
+		</style>
+ 	</head>
+	<body> 
+		<h2>demo on tables</h2>
+	 
+ 		<table width="45%" align="center" >
+			<caption>IPL Points Tables</caption>
+			<tr id="row1">
+				<th>POS</th> <th>Team</th> <th>Pld</th> <th>Won</th> <th>Lost</th> <th>Net RR</th> <th>Pts</th>
+			</tr>
+			<tr id="row2">
+				<td>1</td> 
+				<td> <img src="images/csk.png"/> Chennai Super Kings</td> 
+				<td>10</td> <td>8</td> <td>2</td> <td>+1.069	</td> 
+				<td>16</td>
+			</tr>	
+			<tr>
+				<td>2</td> 
+				<td> <img src="images/dc.png"/> Delhi Capitals</td> 
+				<td>11</td> <td>8</td> <td>3</td> <td>+0.562	</td> <td>16	</td>
+			</tr>
+			<tr>
+				<td>3</td> 
+				<td> <img src="images/rcb.png"/> Royal Challengers Bangalore</td> 
+				<td>11</td> <td>7</td> <td>4</td> <td>-0.200</td> 
+				<td>14</td>
+			</tr>
+			<tr>
+				<td>4</td> 
+				<td> <img src="images/kkr.png"/> Kolkata Knight Riders</td> 
+				<td>11</td> <td>5</td> <td>6</td> <td>+0.363</td> 
+				<td>10</td>
+			</tr>
+			<tr>
+				<tD>5</td> 
+				<td> <img src="images/mi.png"/>Mumbai Indians</td> 
+				<td>11</td> <td>5</td> <td>6</td> <td>-0.453</td> <td>10</td>
+			</tr>
+			<tr>
+				<td>6</td> 
+				<td> <img src="images/pbks.png"/> Punjab Kings</td> 
+				<td>11</td> <td>	4</td> <td>7</td> <td>-0.288</td> <td>8</td>
+			</tr>
+			<tr>
+				<td>7</td> 
+				<td> <img src="images/rr.png"/> Rajasthan Royals</td> 
+				<td>11</td> <td>4</td> <td>7</td> <td>-0.468</td> 
+				<td>8</td>
+			</tr>	
+			<tr>
+				<td>8</td> 
+				<td> <img src="images/srh.png"/> Sunrisers Hyderabad</td> 
+				<td>10</td> <td>2</td> <td>8</td> <td>-0.501</td> 
+				<td>4</td>
+			</tr>
+		</table>
+
+ 
+   </body>						 
+</html>
+ 
+ 
+
+
+
+
+	 
+		

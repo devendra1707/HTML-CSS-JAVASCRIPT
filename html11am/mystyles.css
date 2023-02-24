@@ -1,0 +1,11 @@
+/* example on creating external styles */
+h1{
+  color:red;
+}
+
+label{
+  color:blue;
+}
+
+/* Note: save this file with a name "mystyles.css" in current location */
+ 

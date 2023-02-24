@@ -1,0 +1,46 @@
+<!-- example on div tag
+		display:grid;  ==> it rows & cols
+		grid-template-columns: col1 col2 col3 ...;
+	1000 => 300 -col1
+			700/2=> 350 -col2   350-col2
+		column-gap:Npx; <== it provides margin b/w col to col
+		row-gap:Npx; <== it provides margin b/w row to row
+		grid-gap:Npx;  <== it provides margin b/w col to col & row to row
+
+Note:	nested div comp
+ -->
+<!DOCTYPE html>
+<html lang="en">		 
+	<head>
+		<title>Ex22</title>	 
+	</head>
+	<body> 
+		<h2>demo on div</h2>
+		<!-- main div -->
+  		<div style="display:grid; grid-template-columns:auto auto auto; grid-gap:15px; background-color:blue;">
+				<!-- sub div -->
+				<div style="background-color:yellow;"> 
+					<h1>AAAA</h1>
+				</div>
+				<div style="background-color:yellow;"> 
+					<h1>BBBB</h1>
+				</div> 	
+				<div style="background-color:yellow;"> 
+					<h1>CCCC</h1>
+				</div> 
+				<div style="background-color:yellow;"> 
+					<h1>DDDD</h1>
+				</div>
+				<div style="background-color:yellow;"> 
+					<h1>EEEE</h1>
+				</div> 	
+				<div style="background-color:yellow;"> 
+					<h1>FFFF</h1>
+				</div> 
+		</div>
+   </body>						 
+</html>
+ 
+
+	 
+		
