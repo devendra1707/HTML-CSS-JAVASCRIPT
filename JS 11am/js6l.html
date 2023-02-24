@@ -1,0 +1,36 @@
+<!--
+	 example on constructor w/o params
+	Note: used to initialize objects with static data
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>OOPS Ex5</title>
+ </head>
+ <body>
+   <h2>demo on constructor </h2>
+   <script>
+     class Employee
+     {
+		//let id, name, job; error
+      constructor() //its non-param constructor
+      {
+		//init
+       this.id=1;
+       this.name="Siva";
+       this.job="sse"
+      }
+     } 
+
+     const e1 = new Employee();  //object creation & constructor calling
+     let e2 = new Employee();  //object creation & constructor calling
+
+     document.write(e1, "<br>");
+     document.write(`${e1.id} &nbsp;&nbsp;&nbsp; ${e1.name} &nbsp;&nbsp;&nbsp; ${e1.job} <br>`);
+
+     document.write(e2, "<br>");
+     document.write(`${e2.id} &nbsp;&nbsp;&nbsp; ${e2.name} &nbsp;&nbsp;&nbsp; ${e2.job} <br>`);
+   </script>
+ </body>
+</html>

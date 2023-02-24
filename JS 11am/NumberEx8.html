@@ -1,0 +1,23 @@
+<!-- example on Number methods -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Number Function8</title>
+ </head>
+<body>
+  <h2> demo on parseFloat() </h2>
+  <script>
+    let a=parseFloat("10");
+	document.write( a +"<br>");			// returns 10
+	document.write( typeof a +"<br>");          // 
+	document.write( parseFloat("10.33") +"<br>"); // returns 10.33  <===
+	document.write( parseFloat("30 33") +"<br>"); // returns 30
+	document.write( parseFloat("10 apples") +"<br>");   // returns 10
+	document.write( parseFloat("mangos 50") +"<br>");   // returns NaN 
+	document.write( parseFloat("siva") +"<br>");   // returns NaN 
+	document.write( parseFloat(true) +"<br>");   // returns NaN 
+	document.write( parseInt(false) +"<br>");   // returns NaN  
+	document.write( parseInt(null) +"<br>");   // returns NaN   
+  </script> 
+</body>
+</html>

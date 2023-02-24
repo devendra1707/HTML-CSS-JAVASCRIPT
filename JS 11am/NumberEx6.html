@@ -1,0 +1,23 @@
+<!-- example on Number methods -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Number Function6</title>
+ </head>
+<body>
+  <h2> demo on Number() </h2>
+  <script>
+	  var a=Number(true);
+	  document.write( typeof a +"<br>");		//number
+	  document.write( a +"<br>");   			//returns 1
+	  document.write( Number(false) +"<br>");   //returns 0
+	  document.write( Number(null) +"<br>");    //returns 0
+	  document.write( Number("30") +"<br>");    //returns 30
+	  document.write( Number(" 30  ") +"<br>"); //returns 30
+	  document.write( Number("30.33") +"<br>"); //returns 30.33
+	  document.write( Number("30$33") +"<br>"); //returns NaN
+	  document.write( Number("30 33") +"<br>"); //returns NaN
+	  document.write( Number("Siva") +"<br>");  //returns NaN
+  </script> 
+</body>
+</html>		

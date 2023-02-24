@@ -1,0 +1,50 @@
+<!-- inheritance	-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>OOPS Ex9</title>
+ </head>
+ <body>
+   <h2>demo on Inheritance </h2>
+   <script>
+    class One   //parent class
+    {
+	   constructor(a)
+	   {
+		 this.a=a;
+	   }
+	   set A(a){
+			this.a=a;
+		}
+       get A(){
+		 return this.a;
+		}
+    }
+
+    class Two extends One   //child class
+    {
+	   constructor(a, b)
+	   {
+         super(a);  //it calls parent constructor
+		 this.b=b;
+	   }
+       get B(){
+		 return this.b;
+		}
+		sum(){
+          return this.a+this.b;
+		}
+     }   
+   
+    const ob = new Two(10, 20);
+    document.write(`A val ${ob.A} <br>`);	//it calls get A
+    document.write(`B val ${ob.B} <br>`);	//it call get B
+    document.write(`Sum is ${ob.sum()} <br>`);
+
+    let ob2 = new Two(11, 22);
+    document.write(`A val ${ob2.A} <br>`);
+    document.write(`B val ${ob2.B} <br>`);
+    document.write(`Sum is ${ob2.sum()} <br>`);
+   </script>
+ </body>
+</html>

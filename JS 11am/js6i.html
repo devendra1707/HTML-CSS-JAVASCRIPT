@@ -1,0 +1,54 @@
+<!--	example on class & object 
+class syn:
+	class ClassName
+	{
+	  constructors
+	  methods
+	}
+							
+object syn:
+	let refname = new ClassName();
+
+Note: every object they can maintain own properties
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>OOPS Ex2</title>
+ </head>
+ <body>
+   <h2>demo on class & object </h2>
+   <script>
+     class Employee
+     {
+			//var id;	
+		   //let id=101;    error
+		   //this.id=10;     error
+		  //const id=10;   error
+     } 
+
+     let emp1 = new Employee();  //object creation
+	//adding properties by using prototype
+     emp1.id=1;		//or  emp1.prototype.id=1;
+	 emp1.name="Siva";
+     emp1.job="sse";
+
+     document.write(emp1, "<br>");
+     document.write(`EmpID : ${emp1.id}<br>`);
+     document.write(`EmpName : ${emp1.name}<br>`);
+     document.write(`Job	: ${emp1.job}<br>`);
+
+     let emp2 = new Employee();  //object creation
+     emp2.id=2;
+	 emp2.name="Kumar";
+     emp2.job="tl";
+	 emp2.sal=1000;
+     document.write(emp2, "<br>");
+     document.write(`EmpID : ${emp2.id}<br>`);
+     document.write(`EmpName : ${emp2.name}<br>`);
+     document.write(`Job	: ${emp2.job}<br>`);
+     document.write(`Salary : ${emp2.sal}<br>`);
+   </script>
+ </body>
+</html>
+ 

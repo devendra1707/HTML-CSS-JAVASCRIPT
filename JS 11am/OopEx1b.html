@@ -1,0 +1,22 @@
+<!-- example on OOPs -->
+<Html>
+<body>
+	<h2> demo on object with properties & methods</h2>		
+	<script>		
+		let ob = {
+						a:10, b:20,
+						sum(){
+							return this.a+this.b;
+						},
+						sub(){
+							return this.a-this.b;
+						},
+						product(){
+							return this.a*this.b;
+						}
+					};
+		document.write(ob.sum(), "<br>");
+		document.write(ob.sub(), "<br>");
+		document.write(ob.product(), "<br>");
+	</script>
+</html>

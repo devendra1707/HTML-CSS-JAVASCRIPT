@@ -1,0 +1,24 @@
+<!-- example on OOPs -->
+<Html>
+<head>
+  <title>object literals</title>
+</head>
+<body>
+  <h1> object with methods </h1>
+  <script>
+    const ob = { "greet": function() {
+											document.write("hi, i am greet<br>"); 
+										},
+						   add(a, b) {
+								return a+b;
+							},
+						   sub : (a,b)=> { return a-b; }
+ 						};
+  
+	ob.greet();
+    document.write("Sum is " + ob.add(12, 45) + "<br>");
+    document.write("Sub is " + ob.sub(33,16) + "<br>");
+</script>
+</body>
+</html>
+

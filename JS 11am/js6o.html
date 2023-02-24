@@ -1,0 +1,82 @@
+<!-- set & get methods
+set methods:
+> set methods should start with set keyword.
+> set methods are used to assign data to perperties or to modify properties
+> set methods are automatically executed when we assign a value to property of object.
+
+get methods:
+> get methods should start with get keyword.
+> get methods are used to retrive data from object(properties)
+> get methods are automatically executed when we retrieve the property of object.
+
+Syn:
+	class ClassName
+	{
+      set method-name(args)
+	  {
+		code
+	  }
+	  get method-name()
+	  {
+		code
+	  }
+	}
+
+calling syn:
+	object.method(arg)	==> object.property=value
+	object.method();	==> object.property
+
+Note: don't use set & get keywords while calling
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>OOPS Ex7</title>
+ </head>
+ <body>
+   <h2>demo on set & get methods </h2>
+   <script>
+     class Book
+     {
+       constructor()
+       {  
+         this.id=0;
+		 this.name="";
+	     this.price=0;
+       }
+       set Id(id){
+         this.id=id;
+       }
+       set Name(name){
+         this.name=name;
+       }
+       set Price(price){
+			this.price=price;
+       }
+       get Price(){
+         return this.price;
+       }
+       get Id(){
+         return this.id;
+       }
+       get Name(){
+         return this.name;
+       }
+     }
+
+     var book = new Book(); //obj & constructor
+     document.write( book.id, book.name, book.price, "<br>");
+
+     book.Id=1001;  //book.Id(1001)
+     book.Name="let us c"; //book.Name("let us c");
+     book.Price=150;   //book.Price(50);
+
+     document.write(`BookID  : ${book.Id} <br>`);   //book.get Id()
+     document.write(`BookName  : ${book.Name} <br>`);   //book.get Name()
+     document.write(`Price   : ${book.Price} <br>`);   //book.get Price()   
+
+   </script>
+ </body>
+</html>
+

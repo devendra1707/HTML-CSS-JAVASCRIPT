@@ -1,0 +1,24 @@
+<!-- example on Number methods -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Number Function7</title>
+ </head>
+<body>
+  <h2> demo on parseInt() </h2>
+  <script>
+    let a=parseInt("10");
+	document.write( a +"<br>");			// returns 10
+	document.write( typeof a +"<br>");          // number
+	document.write( parseInt("10.33") +"<br>"); // returns 10   <===  
+	document.write( parseInt("30 33") +"<br>"); // returns 30   <===  
+	document.write( parseInt("10 apples") +"<br>");   // returns 10  <===
+	document.write( parseInt("mangos 50") +"<br>");   // returns NaN 
+	document.write( parseInt("siva") +"<br>");   // returns NaN 
+	document.write( parseInt(true) +"<br>");   // returns NaN   <===  
+	document.write( parseInt(false) +"<br>");   // returns NaN  <=== 
+	document.write( parseInt(null) +"<br>");   // returns NaN    <===
+
+  </script> 
+</body>
+</html>

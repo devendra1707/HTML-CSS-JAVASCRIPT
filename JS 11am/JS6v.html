@@ -1,0 +1,41 @@
+<!-- example on Arrow Functions -->
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>JS New</title>
+ </head>
+<body>
+  <h2>Demo on Arrow functions</h2>
+  <script>
+		//AF with 1param and imp return
+		const area = r => 3.14*r*r;		
+
+		//AF with 2param and imp return
+ 		const sum = (a,b) => a+b; 
+
+		document.write("Sum is ", sum(10, 20), "<br>" );
+		document.write("area  ", area(10), "<br>" );
+ 
+		let eles = [4, 2, 6, 3, 9, 1];
+		eles.sort( (a,b)=>b-a ); //AF in place of param	
+		document.write("Eles :" + eles); 
+   </script>
+	<br>
+   <input type="text" id="t1" placeholder="Enter First Number">  &nbsp;&nbsp;
+   <input type="text" id="t2" placeholder="Enter Second Number"> <br>
+   <button id="b1"> Add </button>  &nbsp;&nbsp;
+  <script>
+														//addEventListener(event, fun/f-p)
+     document.getElementById("b1").addEventListener( "click", ()=>{ 
+																													a = parseInt( t1.value );
+																													b = parseInt( t2.value );
+																											document.write('Sum '+ (a+b) );
+																												} 
+																								);
+ 	</script>													
+</body>
+</html>
+
+			
+	
+	

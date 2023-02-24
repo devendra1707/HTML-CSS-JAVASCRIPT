@@ -1,0 +1,42 @@
+<!-- inheritance  -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>OOPS Ex10</title>
+ </head>
+ <body>
+   <h2>demo on Inheritance </h2>
+   <script>
+     class Person			//Parent class
+     {
+       constructor(name, age)
+       {  
+         this.name=name;
+		 this.age=age;
+       }
+     }
+
+     class Student extends Person
+     {
+       constructor(rno,name,age,course)
+       {																							
+         super(name,age);  //OR super("ram", 30);				
+         this.rno=rno;
+		 this.course=course;
+       }
+     }
+
+     const stu = new Student(101,"ram", 20, "html"); //obj & const
+     document.write(`RollNo   : ${stu.rno} <br>`);  
+     document.write(`Name  : ${stu.name} <br>`); 
+     document.write(`Age   : ${stu.age} <br>`);  
+     document.write(`Course : ${stu.course} <br>`);  
+
+     const stu2 = new Student(202,"sam", 21, "java"); //obj & const
+     document.write(`RollNo   : ${stu2.rno} <br>`);  
+     document.write(`Name  : ${stu2.name} <br>`); 
+     document.write(`Age   : ${stu2.age} <br>`);  
+     document.write(`Course : ${stu2.course} <br>`);  
+   </script>
+ </body>
+</html>

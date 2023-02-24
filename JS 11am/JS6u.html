@@ -1,0 +1,60 @@
+<!-- Arrow functions (since JS6)
+
+1. No Parameter with 1step
+	Syn:		() => statement
+				refvar = () => statement
+
+2. No Parameter with no.of steps
+	Syn:		() => { statements }
+
+3. 1 Parameter with 1 step
+	Syn:		param => statement
+
+4. 1 Parameter with no.of steps
+	Syn:		param => {statements }
+
+5. No.of Parameter with 1step
+	Syn:		(params) => statement
+
+6. No.of Parameter with no.of steps
+	Syn:		(params) => { statements }
+
+Note: without { } implicit return 
+			with { } explicit return
+
+calling:	refvar		===> it displays AF code on webpage	
+				refvar()	===> it execute AF then displaying output	  -->	
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>JS New</title>
+ </head>
+<body>
+  <h2>Demo on Arrow functions</h2>
+  <script>
+	/*	function fun1()			//reg function
+		{
+			return "Hello";
+		}
+
+		function(){				//functional ref/expression
+			return "Hello";
+		}	*/
+
+		let fun1 = () =>  "Hello";		//arrow function with imp return
+		document.write( fun1, "<br>" );
+		document.write( fun1(), "<br>" );
+
+		let fun2 = () => 20*40;   //arrow function with imp return
+		document.write( fun2(), "<br>" );
+  </script>
+</body>
+</html>
+
+
+
+
+
+			
+	
+	

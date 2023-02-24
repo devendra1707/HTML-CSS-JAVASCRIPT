@@ -1,0 +1,20 @@
+<!-- example on OOPs -->
+<Html>
+<head>
+  <title>object literals</title>		
+</head>
+<body>
+<h2> nesting objects with literal</h1>
+<script>
+	let person = { name:"ram", age:40, gender:"male", address:{ dno:"1-2-3", city:"guntur", state:"ap", pincode:522001}  };
+ 
+    document.write(`Name	: ${person.name} <br>`);
+	document.write(`Age	: ${person.age} <br>`);
+	document.write(`Gender	: ${person.gender} <br>`);
+	//document.write(`${person.address} <br>`);  valid
+	document.write(`Address : ${person.address.dno+person.address.city+person.address.state+person.address.pincode} <br>`);
+
+ </script>
+</body>
+</html>
+

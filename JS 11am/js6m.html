@@ -1,0 +1,43 @@
+<!-- example on constructor with params
+Note: used to initialize objects with dynamic data
+
+class syn:
+	class ClassName
+	{
+	  constructor()
+	  {
+		init code
+	  }
+	}
+
+object syn:
+	let refname = new ClassName(args);
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>OOPS Ex5</title>
+ </head>
+ <body>
+   <h2>demo on constructor </h2>
+   <script>
+     class Employee
+     {	
+      constructor(id,name,job) //its param constructor
+      {
+       this.id=id;
+       this.name=name;
+       this.job=job;
+      }
+    } 
+
+     const e1 = new Employee(1, "tim", "pm");  //constr calling
+     let e2 = new Employee(2, "james", "pl");  //constructor calling
+
+     document.write(`${e1.id} &nbsp;&nbsp;&nbsp; ${e1.name} &nbsp;&nbsp;&nbsp; ${e1.job} <br>`);
+     document.write(`${e2.id} &nbsp;&nbsp;&nbsp; ${e2.name} &nbsp;&nbsp;&nbsp; ${e2.job} <br>`);
+
+   </script>
+ </body>
+</html>

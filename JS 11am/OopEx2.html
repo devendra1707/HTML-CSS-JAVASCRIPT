@@ -1,0 +1,74 @@
+<!-- example on OOPs -->
+<Html>
+<head>
+  <title>object literals</title>		
+</head>
+<body>
+<h1> object with properties and methods </h1>
+<script>
+	const stu1 = { "id":1, name:"ram", marks:34,  
+								getResult() {			// or    getResult:function(){
+									if(this.marks>=40)
+										return "Pass";
+									else
+										return "Fail";
+								}
+						  };
+
+/*
+	we can access properties with in fun/method/constructor by using this only
+	this => keyword
+				 reference of cwo		*/
+
+    document.write(`Id	: ${stu1.id} <br>`);		
+	document.write(`Name	: ${stu1.name} <br>`);
+	document.write(`Marks	: ${stu1.marks} <br>`);
+	document.write(`Result is	: ${stu1.getResult()} <br>`);
+
+    //updating
+	stu1.marks=56;
+	document.write(`Marks	: ${stu1.marks} <br>`);
+	document.write(`Result is	: ${stu1.getResult()} <br>`);
+
+/* for 2nd object:
+    let stu2 = { "id" : 2, name : "sam", marks: 70,   
+					 "getResult": function() {
+											if(this.marks>=40)
+												return "Pass";
+											else
+												return "Fail";
+									    }					
+			        };
+	
+    let stu3 = { "id" : 3, name : "ram", marks: 66, 
+					 "getResult": function() {
+											if(this.marks>=40)
+												return "Pass";
+											else
+												return "Fail";
+									    }
+			        };
+	*/
+
+</script>
+</body>
+</html>
+
+<!--
+	let emp ={id:101, name:ram, sal:30000,
+						m1: function(){ code }
+						m2: function(){ code }
+					};				
+
+	let book ={id:111, name:"html", price:400, author:tim,
+						m1: function(){ code }
+						m2: function(){ code }
+					   ...
+					};			
+
+	let product= { .... };
+
+	let user = { .... };
+
+	let movie = {....};
+-->

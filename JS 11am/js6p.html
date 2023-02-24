@@ -1,0 +1,48 @@
+<!-- inheritance
+syn:
+	class PClassName
+	{
+     constructor
+     methods
+	}
+	class CClassName extends PClassName
+	{
+     constructor
+     methods
+	}
+
+Note: we must call parent constructor from child constructor by using super() method.
+		call()  ==> calling parent construcor function (prototying)
+		super() ==> calling parent class constructor (class)
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>OOPS Ex8</title>
+ </head>
+ <body>
+   <h2>demo on Inheritance </h2>
+   <script>
+     class A		//parent class		
+     {
+       constructor()
+       {  
+          document.write("A constructor invoked<br>");
+       }
+     }
+                 //inheritance
+     class B  extends A  //child class
+     {
+       constructor()
+       {						
+		 super(); //it calls parent const
+         document.write("B constructor invoked<br>");    	 
+       }
+     }
+
+		new B();  // memory for A & B  
+   </script>
+ </body>  
+</html>

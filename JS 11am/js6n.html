@@ -1,0 +1,59 @@
+<!--	example on class with members -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>OOPS Ex6</title>
+ </head>
+ <body>
+   <h2>demo on methods </h2>
+   <script>
+     class Student
+     {
+      constructor(rno,name,m1,m2,m3) //param constructor
+      {
+       this.rno=rno;		//properties init
+       this.name=name;
+       this.m1=m1;
+       this.m2=m2;
+       this.m3=m3;
+      }
+      getTotal(){
+        return  this.m1+this.m2+this.m3;
+      }
+      findGrade()
+      {
+       let avg=(this.m1+this.m2+this.m3)/3;
+       let grade;
+
+       if(this.m1>=40 && this.m2>=40 && this.m3>=40)   //all subj pass or not
+	   {
+		  if(avg>=80)
+            grade="A+";
+		  else if(avg>=70)
+            grade="A";
+		  else if(avg>=60)
+            grade="B";
+		  else if(avg>=50)
+            grade="C";
+		  else
+            grade="D";
+	   }else{
+         grade="Fail";
+       }
+	    return grade;	
+      }        
+     } //class end
+
+     const stu1 = new Student(1,"tim",65,56,60); 
+     let stu2 = new Student(2,"james",35,70,75);
+
+     document.write(`${stu1.rno} &nbsp;&nbsp;&nbsp; ${stu1.name} &nbsp;&nbsp;&nbsp; <br>`);
+     document.write(`Total Marks  : ${stu1.getTotal()} <br>`);
+     document.write(`Grade  : ${stu1.findGrade()} <br><br>`);
+
+     document.write(`${stu2.rno} &nbsp;&nbsp;&nbsp; ${stu2.name} &nbsp;&nbsp;&nbsp; <br>`);
+     document.write(`Total Marks  : ${stu2.getTotal()} <br>`);
+     document.write(`Grade  : ${stu2.findGrade()}`);
+   </script>
+ </body>
+</html>

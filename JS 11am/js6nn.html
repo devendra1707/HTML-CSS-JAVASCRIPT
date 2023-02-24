@@ -1,0 +1,57 @@
+<!--	example on class with methods
+class syn:
+	class ClassName
+	{
+      method-name(params)
+	  {
+		local var dec
+		code
+	  }
+      static method-name(params)
+	  {
+		local var dec
+		code
+	  }
+	}
+
+NSM calling syn:
+		object.method()
+SM calling syn:
+		ClassName.method()
+
+Note: we want to use local variables with in the method, those variables declaration is must.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>OOPS Ex6</title>
+ </head>
+ <body>
+   <h2>demo on methods </h2>
+   <script>
+     class Simple
+     {
+		wish(){		//non-static
+			return "Hello World";
+		}
+	   static greet(){			//static 
+		  return "hi, welcome";
+	   }
+       add(a, b) 	//non-static
+	   {
+		 let s=a+b;
+		 return s;
+	   }      
+     } 
+
+		document.write( Simple.greet() ); //calling SM
+
+		const ob = new Simple();
+		document.write( ob.wish() ,"<bR>" );
+		document.write( ob.add(12, 56) ,"<bR>" );
+		//document.write( ob.greet() );		error
+   </script>
+ </body>
+</html>
+ 

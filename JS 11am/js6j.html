@@ -1,0 +1,51 @@
+<!--
+Constructor
+----------------
+Note: 
+  > "constructor" is a keyword.
+  > constructor name must be "constructor" 
+  types:
+     > constructor without args
+     > constructor with args
+  
+class syn:
+	class ClassName
+	{
+	  constructor()
+	  {
+		initialization code
+	  }
+	}
+
+object syn:
+	let refname = new ClassName();
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>OOPS Ex3</title>
+ </head>
+ <body>
+   <h2>demo on constructor </h2>
+   <script>
+     class Demo
+     {
+   	     Demo()   //its method
+		 {
+			document.write("hi, hello<br>");
+		 }
+   	     constructor()   //its constructor
+		 {
+			document.write("how are you<br>");
+		 }
+     } 
+
+     var ob1 = new Demo();  //object creation & constructor calling
+     let ob2 = new Demo();  //object creation & constructor calling
+	 const ob3 = new Demo();
+
+		ob1.Demo();	//method calling
+   </script>
+ </body>
+</html>

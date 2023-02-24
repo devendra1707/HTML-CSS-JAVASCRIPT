@@ -1,0 +1,17 @@
+<!-- example on Number methods -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Number Function3</title>
+ </head>
+<body>
+  <h2> demo on toExponential() </h2>
+  <script>
+	var n = 1000000000;  	
+	document.write( n +"<br>");
+	document.write( n.toExponential() +"<br>");     // returns "1e+7" (def is 0)
+	document.write( n.toExponential(2) +"<br>");     // returns "1.00e+7"
+	document.write( n.toExponential(5) +"<br>");     // returns "1.00000e+7"
+  </script> 
+</body>
+</html>

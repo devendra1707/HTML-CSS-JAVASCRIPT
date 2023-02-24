@@ -1,0 +1,36 @@
+<!-- inheritance  -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>OOPS Ex10</title>
+ </head>
+ <body>
+   <h2>demo on Inheritance </h2>
+   <script>
+     class A		
+     {
+       constructor(){
+		 document.write("A const invoked<br>");
+       }
+     }
+
+     class B 
+     {
+       constructor(){
+     	 document.write("B const invoked<br>");
+       }
+     }
+
+     class C extends A   			//multiple level			not supported
+     {
+       constructor(){
+         super();
+		 super();
+		 document.write("C const invoked<br>");
+       }
+     }
+
+    let ob = new C();
+   </script>
+ </body>
+</html>
