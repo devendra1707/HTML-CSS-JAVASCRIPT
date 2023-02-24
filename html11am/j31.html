@@ -1,0 +1,38 @@
+<!-- example on JS -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+ </head>
+ <body>
+	<h2>demo on printing shape</h2>
+	<label>enter height of triangle</label>
+	<input type="text" id="nol"/>
+	<button onclick="printShape()">Print </button>
+	<br>
+	<output id="result"></output>
+	<script>
+		function printShape()
+		{
+			let n = nol.value;
+			//upper part
+			for(let i=1; i<=n; i++) {	//no.of lines
+				for(let j=1; j<=i; j++) {	//no.of symbols
+					document.write("&#128514");
+				} 
+				document.write("<br>");
+			}
+			//lower part
+			for(let i=n-1; i>=1; i--) {	//no.of lines
+				for(let j=1; j<=i; j++) {	//no.of symbols
+					document.write("&#128515");
+				}
+				document.write("<br>");
+			}
+		}
+	</script>
+ </body>
+</html>
+
+ 

@@ -1,0 +1,32 @@
+<!-- example on CSS -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<style>
+		@keyframes changecolors
+		{
+			1%{ color:red; }		
+			20%{ color:yellow; }			
+			50%{ color:blue; }	
+			75%{ color:#ff9900; }
+			100%{ color:#ff00ff; }
+		}
+
+		#div1{
+			background-color:#ccffff;
+			animation-name:changecolors;
+			animation-duration:10s;	
+			animation-iteration-count:infinite;
+		}
+ 	</style>
+ </head>
+ <body>
+	<h2>demo on custom animation</h2>
+	<div id="div1">
+		<h1>Hello World</h1>
+	</div>
+ 
+  </body>
+</html>
+

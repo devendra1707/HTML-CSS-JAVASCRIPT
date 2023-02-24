@@ -1,0 +1,81 @@
+<!-- example on JS -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+	<style>
+		table{
+			background:#ccff99;
+		}
+		caption{
+			color:blue;
+			font-size:24px;
+		}
+		output{
+			font-size:20px;
+			color:#3300cc;
+		}
+	</style>
+ </head>
+ <body>
+	
+	<table align="center">
+		<caption>Marks Report</caption>
+		<tr>
+			<td> <label>RollNo</label> </td>
+			<td> <input type="text" id="rno"/> </td>
+		</tr>
+		<tr>
+			<td> <label>Name</label> </td>
+			<td> <input type="text" id="sna"/> </td>
+		</tr>
+		<tr>
+			<td colspan="2"> <label>Marks</label> </td>
+		</tr>
+		<tr>
+			<td> <label>HTML</label> </td>
+			<td> <input type="text" id="hm"/> </td>
+		</tr>
+		<tr>
+			<td> <label>CSS</label> </td>
+			<td> <input type="text" id="cm"/> </td>
+		</tr>
+		<tr>
+			<td> <label>JavaScript</label> </td>
+			<td> <input type="text" id="jm"/> </td>
+		</tr>
+		<tr align="center">
+			<td colspan="2"> <button onclick="getResult()">get Result</button> </td>
+		</tr>
+		<tr align="center">
+			<td colspan="2"> <output id="total"> </output> </td>
+		</tr>
+		<tr align="center">
+			<td colspan="2"> <output id="average"> </output> </td>
+		</tr>
+		</table>	
+	<script>
+		function getResult()
+		{
+			let h, c, j, tot, avg;
+			h = parseInt(hm.value);
+			c = parseInt(cm.value);
+			j = parseInt(jm.value);
+			tot = h+c+j;
+			avg = tot/3;
+			total.value = "Total Marks :"+tot;
+			average.value = "Average :"+avg;
+		}
+	</script>
+
+ </body>
+</html>
+
+ 
+
+
+				 
+
+					
+ 

@@ -1,0 +1,34 @@
+<!-- example on JS -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+ </head>
+ <body>
+	<h2>demo on html with loop</h2>
+	<label>enter table number</label>
+	<input type="text" id="tn"/>
+	<button onclick="printTable()">Print Table</button>
+	<br>
+	<output id="result"></output>
+	<script>
+		function printTable()
+		{
+			let n = tn.value;
+			let r;
+			let res ="";
+			for(let i=1; i<=20; i++) {
+				r = n*i;
+				//document.write(n,"*",i,"=",r,"<br>");
+				res=res+n+"*"+i+"="+r+"<br>";
+			}
+
+			//result.value=res;		or
+			document.getElementById("result").innerHTML = res;
+		}
+	</script>
+ </body>
+</html>
+
+ 

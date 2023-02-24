@@ -1,0 +1,35 @@
+<!-- example on CSS -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<style>
+		@keyframes moving
+		{
+			10%{ transform: translate(50px, 50px); }		
+			25%{ transform: translate(1300px, 600px); }			
+			/* 45%{ transform: translate(1300px, 50px); }	 */
+			45%{ transform: rotate(180deg); }	
+			65%{ transform: translate(50px, 600px); }
+			85%{ transform: translate(600px, 50px); transform: rotate(270deg);}
+			100%{ transform: translate(600px, 350px);}
+		}
+
+		#img1{
+			width:150px; 
+			height:150px;
+ 
+			animation-name:moving;
+			animation-duration:10s;	
+			animation-iteration-count:infinite;
+
+		}
+ 	</style>
+ </head>
+ <body>
+	<h2>demo on custom animation</h2>
+	<img id="img1" src="images/squirrel.jpeg"/>
+ 
+  </body>
+</html>
+

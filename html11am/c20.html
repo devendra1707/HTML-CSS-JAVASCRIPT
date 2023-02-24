@@ -1,0 +1,41 @@
+<!-- example on CSS -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<style>
+		@keyframes anim1
+		{
+			from{ background-color:red; }
+			to{background-color:yellow; }
+		}
+
+		#div1{
+			width:300px;
+			height:300px;
+			background-color:#3300ff;
+			animation-name:anim1;
+			animation-duration:5s;	/* animation playing only once while loading of webpage */
+		}
+		#div2{
+			width:500px;
+			height:300px;
+			background-color:#99ff00;
+		}
+		#div2:hover{
+			animation-name:anim1;
+			animation-duration:5s;	/* animation playing only once while move enters */
+		}
+ 	</style>
+ </head>
+ <body>
+	<h2>demo on custom animation</h2>
+	<div id="div1">
+		<h1>Hello World</h1>
+	</div>
+	<div id="div2">
+		<h1>Welcome</h1>
+	</div>
+  </body>
+</html>
+

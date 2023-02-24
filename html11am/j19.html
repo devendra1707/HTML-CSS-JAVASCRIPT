@@ -1,0 +1,37 @@
+<!-- example on JS -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+ </head>
+ <body>
+	<h2>Simple Interest Calc</h2>
+	<label>Principal Amount</label> <br>
+	<input type="text" id="pAmt"/> <br>
+	<label>Time</label> <br>
+	<input type="text" id="time"/> <span>Year(s)</span> <br>
+	<label>Rate Of Interest</label> <br>
+	<input type="text" id="roi"/> <span>%</span> <br>
+	<button onclick="compute()">Calculate</button>
+	<script>
+		function compute()
+		{
+			let p,t,r,si;
+			p = pAmt.value;
+			t = time.value;
+			r = roi.value;
+			si = p*t*r/100;
+			document.write("Simple Interest Amt :" + si);
+		} 
+	</script>
+ </body>
+</html>
+
+ 
+
+
+				 
+
+					
+ 

@@ -1,0 +1,35 @@
+<!-- example on var VS let
+		var => used for defining outer (global) variables
+			  => it supports redefination 
+			  => it supports hoisting
+			  => its old 		
+		let => used for defining local (inner) variables
+			  => it not supports redefination 
+			  => it not supports hoisting
+			  => since JS6 version		
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+ </head>
+ <body>
+	<h2>demo on  var - let </h2>
+	<script>
+		var a=100;	//declaration -> number
+		document.write(a, "  ", typeof a, "<br>");	
+		var a="apple";	//re-declaration - string
+		document.write(a, "  ", typeof a, "<br>");	
+		var a=true;	//re-declaration - boolean
+		document.write(a, "  ", typeof a, "<br>");	
+
+		let b = 200;  //declaration -> number
+		document.write(b, "  ", typeof b, "<br>");	
+		//let b = "mango";		error	 
+	</script>
+ 
+ </body>
+</html>
+
+					

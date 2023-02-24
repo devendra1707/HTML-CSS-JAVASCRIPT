@@ -1,0 +1,90 @@
+	selector{
+		prop:value;
+		prop:value;
+		.....
+	}
+		universal sel:
+			comm for all tags
+		Syn:   *{
+				prop:value;
+				prop:value;
+				.....					
+			  }		
+
+		
+		tag sel:
+			comm styles for all instances of specific tag
+		Syn:		tag-name{
+					prop:value;
+					prop:value;
+					.....					
+				 }		
+
+		group sel:
+			comm styles for all instances of group of tags
+		Syn:		tag1, tag2, tag3,...{
+					prop:value;
+					prop:value;
+					.....					
+				 }
+
+		id sel:
+			used to define specific/unique style for specific tag
+		Syn:		#id-name{
+					........
+				}
+			this should be mapped with id attribute of tag
+		Syn:		<tag id="id-name">
+
+		class sel:
+				*/tag/group/id
+			comm styles for multiple instances of multiple of tags
+		Syn:		.class-name{
+					....
+				}
+			this should be mapped with class attribute of tag
+		Syn:		<tag class="class-name">
+				<tag class="class-name1   class-name2  class-name3...">
+
+			20h1 => tag sel => 20 same	
+				  => id sel   => 20 styles
+				  10h1 => same,  5h1 => same, 5h1=> same
+
+		child tag:
+				comm style for all instances of child tag/grand....
+			Syn:			p-tag  ch-tag{
+									.......
+							}
+							gp-tag  p-tag  ch-tag  {
+									.......
+							}
+
+		direct child sel:
+				comm style for all instances of child tag only
+			Syn:			p-tag > ch-tag{
+									.......
+							}
+							gp-tag > p-tag > ch-tag  {
+									.......
+							}
+
+		attribute sel:
+			comm styles for multiple tags based on specified attribute 
+			all instances
+		Syn:		[attri-name]{
+					.......
+				}
+				[attri-name="value"]{
+					.......
+				}
+				tag[attri-name]{
+					.......
+				}
+				tag[attri-name="value"]{
+					.......
+				}
+
+
+		
+
+			 
