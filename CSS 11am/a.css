@@ -1,0 +1,11 @@
+/* example on creating external css file */
+h1{
+  color:red;
+  background:green;
+}
+p{
+  color:green;
+  color:yellow;
+}
+
+/* save this with a name "a.css" */

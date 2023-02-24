@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+	div {
+	  width: 50px;
+	  height: 50px;
+	  background-color: blue;
+	  position: relative;
+	  animation: move 5s infinite;
+	}
+
+	#d1 {animation-timing-function: linear;}
+	#d2 {animation-timing-function: ease;}
+	#d3 {animation-timing-function: ease-in;}
+	#d4 {animation-timing-function: ease-out;}
+	#d5 {animation-timing-function: ease-in-out;}
+
+	@keyframes move {
+	  from {left: 0px;}
+	  to {left: 500px;}
+	}
+  </style>
+ </head>
+ <body>
+   <div id="d1"></div>  
+   <div id="d2"></div> 
+   <div id="d3"></div> 
+   <div id="d4"></div> 
+   <div id="d5"></div> 
+ </body>
+</html>

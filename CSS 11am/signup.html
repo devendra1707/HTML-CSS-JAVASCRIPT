@@ -1,0 +1,64 @@
+<!—Login Form Designing -->
+<!DOCTYPE html> 
+<html>     
+<head>         
+   <title>SignUp Page</title>         
+   <style>             
+	.signup{                 
+	  border: 1px solid blueviolet;                 
+	  font-size: 25px;                 
+	  border-radius: 10px;                 
+	  width: 500px; 
+	  margin: auto;
+	  box-shadow: 3px 3px 3px 2px black;            
+	  margin-top: 200px;             
+	}
+	.signup input{                 
+	  font-size: 20px;             
+	}             
+	.signup button{                 
+	  font-size: 20px;             
+	}      
+    #star{
+       color:red;
+       font-size:18px;
+    }       
+	.c1{                 
+	  margin-bottom: 10px;                 
+	  margin-left: 3px;                 
+	  margin-right: 3px;                 
+	  margin-top: 3px;                 
+	  height: 200px; 
+	  background-color: #ffcc66;            
+	}
+	.c3{                 
+	  width: 250px;                 
+	  float: left;                 
+	  height: 45px;                 
+	  text-align: right;             
+	} 
+  </style>     
+</head>     
+<body>         
+  <div class="signup">             
+    <form action="testurl" method="post"> 
+      <h2 style="text-align:center;"> Singup Form </h2>                
+   <div class="c1">
+      <label for="un">Username</label> <span id="star">*</span>
+      <input type="text" id="un" name="tun" required> <br>
+  
+      <label for="pw">Password</label> <span id="star">*</span>
+      <input type="password" id="pw" name="tpw" required> <br>
+
+      <label for="ph">Mobile</label> <span id="star">*</span>
+      <input type="text" id="ph" name="tph" required> <br>
+
+      <label for="mi">Maild Id</label> <span id="star">*</span>
+      <input type="email" id="mi" name="tmi" required> <br>
+
+      <button id="b" name="sb">Submit</button>
+    </div>
+    </form>         
+  </div> 
+</body> 
+</html> 

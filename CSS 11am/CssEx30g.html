@@ -1,0 +1,76 @@
+<!-- example on Dropdown Menu Bar -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Dropdown Menu Button */
+      .dropmenu {
+        background-color:#0000ff;
+        color: white;
+        padding: 5px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      /* Dropdown Menu Chart (div) */
+      .dropdown-content {
+        display: none;   /* hide the menu */
+        position: absolute;
+        background-color: rgba(100,200,50,0.9);  /* chart color */
+        min-width: 100px;
+        box-shadow: 0px 4px 8px 0px rgb(0,0,0);
+      }
+
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;  /* hyperlink color */
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+        background:#00ccff;  /* hyperlink color hover */
+      }
+
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+        display: block;  /* show the menu */
+      }
+
+      /* Change the background color of the dropdown menu button when the dropdown content is shown */
+      .dropdown:hover .dropmenu {
+        background-color: #0099ff;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="dropdown" style="float:left;">
+      <button class="dropmenu"><span style="font-family:Wingdings;">&</span>Services <img src="a.jpg" width="10xp" height="10px"> </button> <!-- menu button creation -->
+      <div class="dropdown-content">  <!-- menu chart desining -->
+        <a href="#">Classroom Training</a>
+        <a href="#">Online Training</a>
+        <a href="#">Corporate Training</a>
+        <a href="#">Weekend Training</a>
+        <a href="#">Job Placement Training</a>
+      </div>
+   </div>
+
+    <div class="dropdown" style="float:left;">
+      <button class="dropmenu">Projects</button> <!-- menu button creation -->
+      <div class="dropdown-content">  <!-- menu chart desining -->
+        <a href="#">Live Projects</a>
+        <a href="#">IEEE Projects</a>
+        <a href="#">RealTime Projects</a>
+        <a href="#">Acadamic Projects</a>
+      </div>
+   </div>
+   <br>
+   <h1>   DEMO ON DROPDOWN MENU </h2>
+   <img src="images/a.jpg" width="100%">
+
+  </body>
+</html>

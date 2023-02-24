@@ -1,0 +1,46 @@
+<!-- example on custom animations -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	 @keyframes changecolor1 
+	 {
+		  from {background-color: #ff0000;} /* bgcolor from red to blue*/
+		  to {background-color: #3300ff;}
+	 }
+ 
+	 @keyframes changecolor2
+	 {
+		  from {background-color: #3300ff;} /* bgcolor from blue to red*/
+		  to {background-color: #ff0000;}
+	 }
+
+	h1{
+		font-size:50px; 
+		text-align:center;	
+	}
+
+	h1.c1 {
+		  width: 100%;
+		  height: 60px;					
+		  animation-name: changecolor1;
+		  animation-duration: 3s;
+	 } 
+
+	h1.c2 {
+		  width: 100%;
+		  height: 60px;					
+		  animation-name: changecolor2;
+		  animation-duration: 3s;
+	 } 
+ 
+</style>
+</head>
+<body>
+   <h1 class="c1">Red Apples </h1>
+   <h1 class="c2">Yellow Mangos</h1>
+   <h1 class="c1">Green Bananas</h1>
+   <h1 class="c2">Black Grapes</h1>
+</body>
+</html>
+		

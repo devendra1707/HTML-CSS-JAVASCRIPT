@@ -1,0 +1,45 @@
+<!-- example on CSS Tables -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+	table {
+	   border-collapse: collapse;
+	}
+    td, th{
+       border-bottom:2px solid blue;
+    }
+    tr:nth-child(1) {			/* applyed to 1st row only (heading row) */
+      background-color:#3300ff;
+      color:white;
+    }    
+    tr:nth-child(2) {			/* applyed to 2nd row only */
+      background-color:#cc3300;
+      color:yellow;
+      height:40px;
+    }
+    td:nth-child(2) {			/* applyed to 6th col only  */
+      background-color: rgba(183,183,183,0.6);
+      /* opacity:0.6; */
+    }    
+    th:nth-child(6) {			/* applyed to 6th col only  */
+      background-color: rgba(183,183,183,0.6);
+      /* opacity:0.6; */
+    }    
+  </style>
+ </head>
+ <body>
+    <table width="60%">        
+       <tr> <th></th> <th>Team</th> <th>Pld</th> <th>Won</th> <th>Lost</th> <th>Pts</th> </tr>
+       <tr> <td>1</td> <td>Mumbai Indians	</td> <td>7</td> <td>5</td> <th>2</th> <th>10</th> </tr>
+       <tr> <td>2</td> <td>Delhi Capitals</td> <td>7</td> <td>5</td> <th>2</th> <th>10</th> </tr>
+       <tr> <td>3</td> <td>Kolkata Knight Riders</td> <td>6</td> <td>4</td> <th>2</th> <th>8</th> </tr>
+       <tr> <td>4</td> <td>Royal Challengers Bangalore</td> <td>6</td> <td>4</td> <th>2</th> <th>8</th> </tr>
+       <tr> <td>5</td> <td>Sunrisers Hyderabad</td> <td>7</td> <td>3</td> <th>4</th> <th>6</th> </tr>
+       <tr> <td>6</td> <td>Rajasthan Royals</td> <td>7</td> <td>2</td> <th>5</th> <th>4</th> </tr>
+       <tr> <td>7</td> <td>Chennai Super Kings</td> <td>7</td> <td>2</td> <th>5</th> <th>4</th> </tr>
+       <tr> <td>8</td> <td>Kings XI Punjab</td> <td>7</td> <td>1</td> <th>6</th> <th>2</th> </tr>
+    </table>
+
+ </body>
+</html>

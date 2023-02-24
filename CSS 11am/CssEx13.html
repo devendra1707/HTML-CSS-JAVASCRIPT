@@ -1,0 +1,28 @@
+<!-- example on CSS selectors -->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>CSS Ex13</title>
+  <style>
+	h1{		/* tag selector */
+      color:#ffcc00;
+	  font-size:20px;	  
+	}
+	h1:hover{		/* hover selector */
+      color:#9900ff;
+	  font-size:30px;
+	  text-decoration:underline;
+	}
+	input[type="text"]:hover{	/* attribute & hover selector */
+	  border:2px solid blue;
+	  border-radius:15px;
+	}
+  </style>
+ </head>
+ <body>		
+    <h1> Demo On Selectors </h1>
+
+	<input type="text" id="t1"> <br>
+	<input type="password" id="t1"> <br>
+ </body>
+</html>

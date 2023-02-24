@@ -1,0 +1,31 @@
+<!-- example on custom animations -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  #d1{
+    width:300px;
+    height:200px;
+ }
+
+	#d1:hover{
+		animation: myanim 20s;
+	} 
+
+  @keyframes myanim
+  {
+     0%{ transform: translate(10px, 10px);}
+    25%{ transform: translate(100px, 300px); }
+    40%{ transform: rotate(260deg); }
+    50%{ transform: translate(410px, 500px) ; }
+    75%{ transform: translate(650px, 300px); }
+    100%{ transform: rotate(-200deg); }
+  }
+</style>
+</head>
+<body>
+   <div id="d1">	
+      <img src="a.jpg" width="300px">
+   </div>
+</body>
+</html>

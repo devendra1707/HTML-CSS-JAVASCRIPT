@@ -1,0 +1,44 @@
+<!-- example on CSS Tables -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+	table {
+	   border-collapse: collapse;
+	}
+    th, td {
+	  border-top: 2px solid #ff3300;   
+	}  
+    tr:nth-child(even) {					/* applyed to all even rows */
+      background-color:#33ffff;
+    }
+    tr:nth-child(odd) {			/* applyed to all odd rows */
+      background-color:#99ffff;
+    }
+	tr:nth-child(6) {			/* applyed to 2nd row only */
+      background-color:#cc33ff;
+	  color:white;
+      height:50px;
+    }
+    th:nth-child(6) {			/* applyed to 6th col only */
+      background-color:#3366ff;
+	  color:white;
+      height:50px;
+    }
+  </style>
+ </head>
+ <body>
+    <table width="60%">        
+       <tr> <th></th> <th>Team</th> <th>Pld</th> <th>Won</th> <th>Lost</th> <th>Pts</th> </tr>
+       <tr> <td>1</td> <td>Mumbai Indians	</td> <td>7</td> <td>5</td> <th>2</th> <th>10</th> </tr>
+       <tr> <td>2</td> <td>Delhi Capitals</td> <td>7</td> <td>5</td> <th>2</th> <th>10</th> </tr>
+       <tr> <td>3</td> <td>Kolkata Knight Riders</td> <td>6</td> <td>4</td> <th>2</th> <th>8</th> </tr>
+       <tr> <td>4</td> <td>Royal Challengers Bangalore</td> <td>6</td> <td>4</td> <th>2</th> <th>8</th> </tr>
+       <tr> <td>5</td> <td>Sunrisers Hyderabad</td> <td>7</td> <td>3</td> <th>4</th> <th>6</th> </tr>
+       <tr> <td>6</td> <td>Rajasthan Royals</td> <td>7</td> <td>2</td> <th>5</th> <th>4</th> </tr>
+       <tr> <td>7</td> <td>Chennai Super Kings</td> <td>7</td> <td>2</td> <th>5</th> <th>4</th> </tr>
+       <tr> <td>8</td> <td>Kings XI Punjab</td> <td>7</td> <td>1</td> <th>6</th> <th>2</th> </tr>
+    </table>
+
+ </body>
+</html>

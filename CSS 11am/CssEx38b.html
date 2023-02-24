@@ -1,0 +1,25 @@
+<!-- example on custom animations -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ @keyframes changecolors 
+ {
+	  25% {background-color: #ff0000;}				 
+	  50% {background-color: #3300ff;}		
+	  75% {background-color: #ff00cc;}		
+	 100% {background-color: #ffff33;}		
+ }
+
+ .c{
+	  width: 100%;
+	  animation-name: changecolors;
+	  animation-duration: 10s;
+	  animation-iteration-count:infinite;
+ } 
+</style>
+</head>
+<body class="c">
+   <h1 >CSS Custom Animations</h1>
+</body>
+</html>

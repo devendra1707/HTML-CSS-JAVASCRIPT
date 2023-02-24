@@ -1,0 +1,32 @@
+<!-- example on applying transition on multiple attributes -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.head1{
+		margin-left: 10px;
+		transition: margin-left 10s;
+ 	}
+	.head1:hover {
+		margin-left: 1400px;
+	}													
+
+	.head2{
+		margin-left: 1400px;
+		transition: margin-left 10s;
+ 	}
+	.head2:hover {
+		margin-left: 10px;
+	}															
+ </style>
+</head>
+<body>
+	<h1>The transition with mutiple Properties</h1>
+	<div style="background:#ffff00;"> 
+		<h1 class="head1">ThumsUp</h1> 
+	</div>
+  	<div style="background:#99ff00;"> 
+		<h1 class="head2">Sprite</h1> 
+	</div>
+</body>
+</html>

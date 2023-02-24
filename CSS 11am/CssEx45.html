@@ -1,0 +1,45 @@
+<!-- example on CSS Tables -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+	#students{
+	  font-family: Tahoma, sans-serif;
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+
+	#students td, #students th {
+	  border: 1px solid #ddd;
+	  padding: 8px;
+	}
+
+	#students tr:nth-child(even){
+       background-color: #aaaaaa;
+    }
+
+	#students tr:hover {
+       background-color: #cc33ff;
+    }
+   
+   #students th {
+	  padding-top: 12px;
+	  padding-bottom: 12px;
+	  text-align: left;
+	  background-color: #4CAF50;
+	  color: white;
+	}
+  </style>
+ </head>
+ <body>
+    <table id="students">        
+       <tr> <th>SLNO</th> <th>NAME</th> <th>PHONE</th> </tr>
+       <tr> <td>1</td> <td>Ram</td> <td>9885098850</td> </tr>
+       <tr> <td>2</td> <td>Sam</td> <td>9889889880</td> </tr>
+       <tr> <td>3</td> <td>Rahim</td> <td>9876598765</td> </tr>
+       <tr> <td>4</td> <td>Siva</td> <td>0000000000</td> </tr>
+    </table> 
+ </body>
+</html>
+
+

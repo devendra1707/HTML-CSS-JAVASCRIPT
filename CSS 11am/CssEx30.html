@@ -1,0 +1,36 @@
+<!-- example on hiding/displaying element -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .c1{
+       background-color:#3399ff;
+       visibility: visible;
+     }
+    .c2{
+		width:300px;
+       background-color:#ff9966;
+       visibility: hidden;
+     }				
+</style>
+</head>				 
+<body>
+    <div id="d1" class="c1">
+        <h1>im in visible mode</h1>
+    </div>
+	<label>Marital Status:</label>
+	<input type="radio" id="m" name="ms" onclick="document.getElementById('d2').style.visibility='visible'">Married  &nbsp;&nbsp;&nbsp;
+	<input type="radio" id="um" name="ms" onclick="document.getElementById('d2').style.visibility='hidden'">Unmarried
+	
+    <div  id="d2" class="c2">
+		<label>Date Of Marriage</label> <br>
+		<input type="date" id="dom" name="dom"> <br>
+	    <label>Spouse Name</label> <br>
+		<input type="text" id="sp_name" name="sp_name">
+    </div>
+     
+ <!-- <input type="text" id="t1" name="t1" value="true" style="visibility:hidden;">  -->
+</body>
+</html>
+
+

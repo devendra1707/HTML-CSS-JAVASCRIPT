@@ -1,0 +1,14 @@
+/* creating extrenal css file */
+
+p{
+  color:yellow;
+  background:blue;
+  font-size:20px;
+}
+
+h1{
+  color:blue;
+  background:yellow;
+}
+
+/* save this file with a name "abc.css" */

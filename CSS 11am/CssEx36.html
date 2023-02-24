@@ -1,0 +1,39 @@
+<!-- example on css transition with transforms -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	img{
+		width: 200px;
+		height:200px;
+		margin-left: 200px;
+		margin-top: 50px;
+		box-shadow:  1px 1px 5px 5px  #6666ff;
+	}
+
+	.image1 {
+		transition: transform 3s, box-shadow 3s;
+	}
+	.image1:hover{
+		transform: rotate(360deg) scale(1.5);
+		box-shadow:  1px 1px 5px 5px  #ff0000;
+	}
+
+	.image2 {
+		transition: transform 3s, box-shadow 3s;
+	}
+	.image2:hover{
+		transform:  rotate(-360deg) scale(1.5); 
+		box-shadow:  1px 1px 5px 5px  #ff0000;
+	}
+
+</style>									        
+</head>
+<body>
+	<h1 style="box-shadow: 5px 5px 5px 5px #ff0000;">Transform with Transition Properties</h1>
+	<img class="image1" src="images/dog.jpg">
+	<img class="image2" src="images/b.jpeg">
+
+</body>
+</html>
+

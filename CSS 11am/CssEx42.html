@@ -1,0 +1,45 @@
+<!-- example on CSS Tables -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+ /*  outline table:  
+    table {
+      border-collapse: collapse; 
+      border: 1px solid blue;
+	}	
+
+ single line border table: 
+
+    table {
+      border-collapse: collapse; 
+    }	
+	table, td, th {
+	  border: 2px solid blue;
+	}
+
+ only bottom line table:	*/
+    table {
+      border-collapse: collapse; 
+    }	
+	th, td {
+	  padding: 8px;
+	  text-align: left;
+	  border-bottom: 2px solid #ff3300;  
+	/*  border-right: 2px solid #ff3300;  
+		border-top: 2px solid #ff3300;  
+		border-left: 2px solid #ff3300;  
+		*/
+	}
+  </style>
+ </head>
+ <body>
+    <table width="60%">      <!-- border  OR  style="border:2px solid blue;" -->
+       <tr> <th>SLNO</th> <th>NAME</th> <th>PHONE</th> </tr>
+       <tr> <td>1</td> <td>Ram</td> <td>9885098850</td> </tr>
+       <tr> <td>2</td> <td>Sam</td> <td>9889889880</td> </tr>
+       <tr> <td>3</td> <td>Rahim</td> <td>9876598765</td> </tr>
+       <tr> <td>4</td> <td>Siva</td> <td>0000000000</td> </tr>
+    </table>
+ </body>
+</html>

@@ -1,0 +1,47 @@
+<!-- example on applying transition on multiple attributes -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	@keyframes left-right {
+		from { left:1px; top:1px;}
+		to {left:1300px; top:1px;}
+	}
+
+	@keyframes right-left {
+		from { left:1300px; top:1px;}
+		to {left:1px; top:1px;}
+	}
+
+	.scroll1{
+		position:relative;
+		animation: left-right 10s infinite;
+	    animation-delay:2s;
+ 	}
+	.scroll2{
+		position:relative;
+		animation:right-left 10s infinite;
+	    animation-delay:2s;
+ 	}
+	.scroll3{
+		position:relative;
+		animation:left-right 10s 2s infinite alternate;
+ 	}
+ </style>
+</head>
+<body>
+	<h1>css custom animations</h1>
+  	<div style="background:#99ff00;"> 
+		<h1 class="scroll1">Breaking News: Celebrity Pet Animal (Ant) got Fever, Admited in NIMS.</h1> 
+	</div>
+
+	<div style="background:#ffff00;"> 
+		<h1 class="scroll2">Flash Flash Sales. 99% Discount on Dresses, Sarees, etc...</h1> 
+	</div>
+
+	<div style="background:#ccffff;"> 
+		<h1 class="scroll3">Great Indian Festival Sale</h1> 
+	</div>
+
+</body>
+</html>

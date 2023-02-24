@@ -1,0 +1,36 @@
+<!-- demo on CSS Pseudo Elements -->
+<!DOCTYPE html>
+<html>			 
+  <head>
+    <style>
+		   h2::before {
+			content: "@ :";
+		  }
+		 h2::after{
+			content: url(images/smile.png);
+		 }
+		p::first-letter{
+			font-size:30px;
+			color:#3300ff;	
+		 }
+		 p::first-line{
+			color:red;
+			background:#ccff00;
+		 }
+		::selection{
+			color:#00ccff;
+			background:#990000;
+		}
+	 </style>			
+  </head>
+  <body>
+	<h2> Hi </h2>
+	<h2> Hello </h2> 
+	<h2> How Are You </h2> 
+    <p>Editplus Is Sold "As Is" And Without Any Warranty As To Merchantability Or Fitness For A Particular Purpose Or Any Other Warranties Either Expressed Or Implied. The Author Will Not Be Liable For Data Loss, Damages, Loss Of Profits Or Any Other Kind Of Loss While Using Or Misusing This Software.</p>
+
+    <p>You may copy the evaluation version of this software and documentation as you wish, and give exact copies of the original evaluation version to anyone, and distribute the evaluation version of the software and documentation in its unmodified form via electronic means. But you should not charge or requesting donations for any such copies however made and from distributing the software and/or documentation with other products without the author's written permission. </p>
+  </body>
+</html>
+				 
+					

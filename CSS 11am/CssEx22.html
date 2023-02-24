@@ -1,0 +1,43 @@
+<!-- example on overflow (div, p, iframe) -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	.scroll {  
+		background-color: #33ffff;  
+		width: 300px;  
+		height: 150px;  
+		overflow: scroll;  
+	}  
+	.hidden {  
+		background-color: #ff33ff;  
+		width: 100px;  
+		height: 150px;  
+		overflow: hidden;  
+	}  
+	.auto {  
+		background-color: #ff9900;  
+		width: 100px;  
+		height: 150px;  
+		overflow: auto;  
+	}  
+</style>
+</head>
+<body>
+<p>overflow:scroll</p>
+<div class="scroll">
+If contents goes out the container then scroll bar is used to see the rest of the content. It specifies that the overflow is clipped, and rest of the content will be invisible. It specifies that the overflow is clipped, and rest of the content will be invisible.
+If contents goes out the container then scroll bar is used to see the rest of the content. It specifies that the overflow is clipped, and rest of the content will be invisible. It specifies that the overflow is clipped, and rest of the content will be invisible.
+</div>
+
+<p>overflow:hidden</p>
+<div class="hidden">
+It specifies that the overflow is clipped, and rest of the content will be invisible.It specifies that the overflow is clipped, and rest of the content will be invisible.
+</div>
+
+<p>overflow:auto</p>
+<div class="auto">
+It specifies that if overflow is clipped, a scroll bar is needed to see the rest of the content.It specifies that the overflow is clipped, and rest of the content will be invisible.It specifies that the overflow is clipped, and rest of the content will be invisible.
+</div>
+</body>
+</html>
