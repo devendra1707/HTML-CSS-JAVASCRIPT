@@ -1,0 +1,30 @@
+<!-- parameter constructor 
+	constructor created with parameters is called "Parameter constructor".
+	Adv:  used for dynamic initialization of objects, means every object initialized with different data	 -->
+<Html>
+<head>
+  <title>constructor</title>
+</head>
+<body>
+<h2> demo on creating object with parameterized constructor  </h2>
+<script>
+	  function Book(name, year, author, price) //dev const
+	  {				
+		//prop      =     param		
+		this.name = name;  //properties
+		this.year = year;
+		this.author = author;
+		this.price = price;
+	  }
+
+	  let firstBook = new Book("Html", 2014, "Time", 500); //calling const
+	  const secondBook = new Book("JavaScript", 2013, "Branden", 600); 
+	  const thirdBook = new Book("CSS", 2010, "W3C", 300);
+	 
+	  document.write(`1st: ${firstBook.name}  ==> ${firstBook.year} <br>`);           
+	  document.write(`2nd: ${secondBook.name} ==> ${secondBook.year} <br>`);     
+	  document.write(`3rd: ${thirdBook.name} ==> ${thirdBook.year} <br>`);
+</script>
+</body>
+</html>
+

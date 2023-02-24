@@ -1,0 +1,35 @@
+<!-- exmaple on prototype -->
+<html>
+ <head>
+   <script>
+	 function Product(name,qty,unitPrice)  //constructor function
+     {
+       this.name=name;
+       this.qty=qty;
+       this.unitPrice=unitPrice; 
+	 }
+   
+    //creating object
+    let p = new Product("Soap", 2, 42.50);
+   </script>
+ </head>
+<body>
+  <script>   
+    //adding new property to an existing object
+	Product.prototype.discount=10;
+    //adding new method to an existing object
+    Product.prototype.getAmount=function(){
+																return this.qty*this.unitPrice;
+															 };
+
+	document.write(`Name	: ${p.name} <br>`);
+	document.write(`Qty	: ${p.qty} <br>`);
+	document.write(`UnitPrice	 : ${p.unitPrice} <br>`);
+	document.write(`TotalAmt	 : ${p.getAmount()} <br>`);
+	document.write(`Discount	: ${p.discount} <br>`);
+	document.write(`BillingAmt	: ${p.getAmount()-p.discount}`);
+
+    //Product.prototype.gst=14;	  valid
+  </script>
+</bodY>					 
+</html>

@@ -1,0 +1,45 @@
+<!-- example on strings -->
+<html>
+ <head>
+   <title>String Functions4</title>
+ </head>
+<body>
+   <h2>demo on string functions</h2>
+  <script>
+    var st="Green Mangos 123";
+
+    document.write( st +"<br>");   
+    document.write( st.length +"<br>");   //it returns no.of chars
+
+    document.write( st.toUpperCase() +"<br>");  //it converts the string into uppercase
+    document.write( "Apples".toUpperCase() +"<br>");   
+
+    document.write( st.toLowerCase() +"<br>");   //it converts the string into lowercase
+
+	var a="   Ram    ";
+    document.write( a.trimLeft() +"<br>");    //it removes leading/white spaces before the string
+    document.write( a.trimRight() +"<br>"); //it removes trailing/white spaces after the string
+    document.write( a.trim() +"<br>");  //it removes spaces both sides of the string
+
+    var st1="Siva", st2="Kumar";
+    //st3=st2.concat(st1);
+    document.write( st1.concat(st2) +"<br>"); //it appending two strings
+	
+    for(i=0; i<st.length; i++) {
+       document.write( st.charAt(i) +"&nbsp;&nbsp;");  //it returns the char available @the given index
+       document.write( st.charCodeAt(i) +"<br>");  //it returns ASCII of char available @the given index
+    }
+
+    document.write( st + "<br>");
+	//it used to extract some portion of the original string
+    document.write( st.substring(3, 9) + "<br>");   //3 and 8  
+
+  </script>
+</body>
+</html>
+
+<!--
+JS:
+		var.method()	   ==> var=>object   ==> object.method()
+		pridt.method()    ==> pridt => npridt ==> npridt.method()
+-->

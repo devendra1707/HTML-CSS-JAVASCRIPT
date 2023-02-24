@@ -1,0 +1,27 @@
+<!-- Array of objects with Literals -->
+<Html>
+<body>
+<h1> Creating object Array with Literals </h1>
+<script>
+   //var a=[ obj1, obj2, obj3, ... ]
+   //object array
+   /* 
+   let emp1 = { id:11, name:"ram", sal:35000 };
+   let emp2 = { id:22, name:"sam", sal:45000 };
+   let emp3 = { id:33, name:"rahim", sal:25000};
+   let emps = [emp1, emp2, emp3];
+		OR	*/
+   let emps = [ {id:11, name:"ram", sal:35000}, {id:22, name:"sam", sal:45000}, {id:33, name:"rahim", sal:25000} ];
+
+   //retrieving data from array
+   for(i=0; i<emps.length; i++){
+      document.write(emps[i].id, emps[i].name, emps[i].sal, "<br>");
+   }
+   
+   document.write(emps);
+</script>
+</body>
+</html>
+
+	
+

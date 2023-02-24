@@ -1,0 +1,32 @@
+<!-- example on string interpolation.
+With template literals, you can do string interpolation using ${variable/expr} inside template literals:
+-->
+<html>
+ <head>
+   <title>String Functions8</title>
+ </head>
+ <body>
+   <h2>demo on string interpolation</h2>
+   <script>
+     let a=10;
+     let b=20;
+	 //document.write("A val " + a + "<br>");		original 
+     document.write(`A Val ${a} <br>`);  //valid
+     document.write(`B Val ${b} <br>`);  //valid
+     document.write("A Val ${a} <br> B Val ${b} <br>");  //not wokring
+  
+     var st=`Sum is : ${a+b}`;
+     document.write(st, "<br>");
+
+     let n=prompt("enter table num");
+
+     for(i=1; i<=10; i++)
+     {
+       //r=n*i;
+       //document.write(n + "=" + i + "*" + r + "<br>");
+       document.write(`${n} * ${i} = ${n*i} <br>`);
+     }
+   </script>	
+</body>
+</html>
+

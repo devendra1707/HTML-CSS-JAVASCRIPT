@@ -1,0 +1,23 @@
+<!-- example on OOPs -->
+<html>
+ <head>
+  <title>instanceof keyword</title>
+ </head>
+<body>
+ <h2> demo this & instanceof keywrod </h2>
+ <script>
+	function Book(name, year) 
+	{
+	  console.log(this);
+	  this.name = name;
+	  this.year = year;
+	}
+
+ 	var myBook1 = new Book("html", 2014);  
+	console.log( myBook1 instanceof Book );  
+
+	let myBook2 = new Book("css", 2015);  
+	console.log(myBook2 instanceof Date); 
+</script>
+</body>
+</html>

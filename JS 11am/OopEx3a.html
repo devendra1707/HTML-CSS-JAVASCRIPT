@@ -1,0 +1,33 @@
+<!-- constructors
+		types: 
+			> non-parameter constructor 
+			> parameter constructor 
+
+Non-parameter constructor 
+	constructor created without parameters is called Non-parameter constructor.
+	Adv: used for static initialization of objects, means each and every object was initialized with the same data	 -->
+<Html>
+<head>
+  <title>constructor</title>
+</head>
+<body>
+<h2> creating object with constructor without parameters </h2>
+<script>
+  function Book()  //dev constructor
+  {				
+    this.name = "C Prog";  //properties init
+    this.year = 2021;
+	this.author = "Bala"
+	this.price =  340;
+  }
+
+  const firstBook = new Book();  //calling constructor
+  const secondBook = new Book(); 
+  //var third = Book();  its invalid operation
+
+  document.write(`${firstBook.name}  ==> ${firstBook.price} <br>`);           
+  document.write(`${secondBook.name} ==> ${secondBook.price} <br>`);   
+</script>
+</body>
+</html>
+

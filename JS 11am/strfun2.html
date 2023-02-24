@@ -1,0 +1,47 @@
+<!-- example on strings -->
+<html>
+ <head>
+   <title>String Functions2</title>
+ </head>
+<body>
+   <h2>demo on string creations</h2>		
+  <script>
+   //Strings can be created from other types using the String() function.
+    var intStr = String(32);    // "32" 
+    var floatStr = String(10.67);  //"10.67"
+    var boolStr = String(true); // "true"		
+    var nullStr = String(null); // "null"
+    document.write(intStr+"<br>"+ floatStr + "<br>" + boolStr+"<br>"+nullStr+"<br>");
+
+    document.write(typeof intStr +"<br>");
+    document.write(typeof floatStr +"<br>");
+    document.write(typeof boolStr +"<br>");
+    document.write(typeof nullStr +"<br>");
+
+    //Creating a String object using new keyword is allowed, but is not recommended as it behaves like Object unlike primitive strings.
+    var ob = new String(32);
+    document.write(ob, typeof ob +"<br>");
+
+
+
+
+
+
+
+
+
+	
+   //toString() can be used to convert Numbers, Booleans or Objects to Strings.
+    var intStr1 = (500).toString(); // "500" 
+    var boolStr1 = (false).toString(); // "false" 
+    var objStr1 = ({}).toString(); // [object Object]
+    
+	document.write(intStr1+"<br>"+boolStr1+"<br>"+objStr1+"<br>");
+
+    document.write(typeof intStr1 +"<br>");
+    document.write(typeof boolStr1 +"<br>");
+    document.write(typeof objStr1 +"<br>");
+  </script>
+</body>
+</html>
+

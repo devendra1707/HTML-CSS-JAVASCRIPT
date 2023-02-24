@@ -1,0 +1,39 @@
+<!-- example on OOPs -->
+<Html>
+<head>
+  <title>Constructor</title>
+</head>
+<body>
+<h2> Constructor with properties and methods </h2>
+<script>
+	function Student(id, name, total)
+	{
+		//init
+		this.id=id;
+		this.name=name;
+		this.total=total;
+		//method
+		this.getResult = function() {
+										  if(this.total>=40)
+												return "Pass";
+										  else 
+												return "Fail";
+									};
+	}
+		
+    let stu = new Student(11, "Ram", 88);
+    let stu1 = new Student(22, "Sam", 66);
+    const stu2= new Student(33, "Rahim", 77);
+
+    document.write(`Id	: ${stu.id} <br>`);
+	document.write(`Name	: ${stu.name} <br>`);
+	document.write(`Marks	: ${stu.total}<br>`);
+	document.write(`Result is	: ${stu.getResult()} <br>`);
+
+    //modifications
+	stu.total=58;
+	document.write(`Marks	: ${stu.total} <br>`);
+	document.write(`Result is	: ${stu.getResult()} <br>`);
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- example on validating password -->
+<html>
+ <head>
+   <title>String Functions8</title>
+   <script>
+     function validatePW()
+	 {
+       let pw=tpw.value;  //or document.getElementById("st").value;
+       let ac=0, dc=0, sc=0;
+
+	   for(i=0; i<pw.length; i++)
+       {
+         ch=pw.charAt(i);
+         if((ch>='A' && ch<='Z') || (ch>='a' && ch<='z'))
+            ac++;
+         else if(ch>='0' && ch<='9')
+            dc++;
+         else if(ch=="$" || ch=="@" || ch=="_" || ch=="#")
+            sc++;
+       }
+
+       if(ac==0 || dc==0 || sc==0)
+	      msg.value="plz choose strong pw, try mix of alpha, digit, $, @, _ and #";
+	   else
+	      msg.value="PS Ok";
+	 }
+   </script>
+ </head>
+ <body>
+   <h2>demo on string functions</h2>
+   <label>Enter Password</label>
+   <input type="password" id="tpw"> <output id="msg"> </output>
+   <br>
+   <input type="button" value="SingUp" onclick="validatePW()">
+
+</body>
+</html>
+ 

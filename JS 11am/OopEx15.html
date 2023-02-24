@@ -1,0 +1,38 @@
+<!--
+	class ClassName
+	{
+	 constructor(args)
+	 {
+		init properties
+	  }
+	  methods...
+	}
+
+refvar = new ClassName(values);
+-->
+
+<!-- example on class -->
+<html>
+<body>
+<h1> Creating class </h1>
+<script>
+   class Product
+   {
+     constructor(pcode, pname, price)
+     {
+       this.pcode=pcode
+       this.name=pname;
+       this.price=price;
+	 }
+   }
+
+  let p = new Product("P110", "PenDrive 32gb", 300);
+
+  document.write("PCode	:" + p.pcode, "<br>");
+  document.write("Name	 :" + p.name, "<br>");
+  document.write("Price 	:" + p.price, "<br>");
+  document.write( p );
+
+</script>
+</body>
+</html>

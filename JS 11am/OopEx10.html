@@ -1,0 +1,26 @@
+<!-- exmaple on OOPs -->
+<html>
+  <head>
+  <script>
+	function A()  //constructor function (parent constructor)
+    {
+      document.write("im parent constructor<br>");
+	}
+
+	function B()  //constructor function (child constructor)
+    {
+		//calling parent const
+		A();	// <== inheritance 
+       document.write("im child constructor<br>");
+ 	}
+  </script>
+ </head>
+<body>
+  <h2> demo on Inheritance </h2>
+  <script>
+    let b = new B();  //its allocates memory for both A & B 
+
+   //let a = new A();  its valid, but it creates only A
+  </script>
+</bodY>
+</html>

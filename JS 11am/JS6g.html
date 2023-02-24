@@ -1,0 +1,58 @@
+<!-- example on JS new features 
+		`text`  ==> template literal
+		`${variable|expr}`	==> interpolation
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>JS New6</title>
+	<script src="funs.js"></script>
+ </head>
+<body>
+  <h2>Demo on string interpolation </h2>
+  <script>
+    let name=`Rama`;
+	let age=15;
+
+    document.write(name + "  " + age + " years old<br>");
+    //document.write("${name} ${age} years old<br>");   invalid
+
+  	document.write(`${name}`);
+	document.write(`${age}<br>`);
+    document.write(`${name} ${age} years old <br>`);
+
+    document.write(`Sum is ${10+40} <br>`);
+	document.write(`${age>=18} <br>`);
+
+	let n=prompt("enter table"); 
+	for(i=1; i<=10; i++) {
+	  document.write(`${n} * ${i} = ${n*i} <br>`);
+    } 
+		 
+    let x = `Hi ${name}`; 
+	document.write(x , "<br>");
+
+	let a = 45;
+    let b = 20;
+	let res = `Sum is ${a+b},
+					Prodcut ${a*b}, 
+					Div ${a/b}`;
+	document.write(res,"<br>");	     
+
+	let res1 = `Sum Of Values : ${sum(1,2,7,6,9)}`;
+	document.write(res1, "<br>");
+
+	let eles=[10,20,30,40,50];
+	document.write(`Elements : ${eles}`);
+
+	function sum(...n)
+	{
+		let s=0;
+		for(t of n){
+			s+=t;
+		}
+		return s;
+	}
+  </script>
+</body>
+</html>

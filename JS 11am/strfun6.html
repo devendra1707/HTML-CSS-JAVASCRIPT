@@ -1,0 +1,28 @@
+<!-- example on checking password strength -->
+<html>
+ <head>
+   <title>String Functions6</title>
+   <script>
+     function checkPW()
+	 {
+       var pw=tpwd.value;
+       var len=pw.trim().length;
+	   var msg="";
+
+       if(len>=1 && len<=5)
+          msg="Weak";
+       else if(len>=6 && len<=10)
+          msg="Good";
+       else if(len>=11)
+          msg="Strong";
+     
+       res.value="Password Strength : "+msg;
+	 }
+   </script>
+ </head>
+<body>
+   <label>Password</label>
+   <input type="password" id="tpwd" oninput="checkPW()" maxlength="16">
+   <output id="res"> </output>				
+</body>
+</html>

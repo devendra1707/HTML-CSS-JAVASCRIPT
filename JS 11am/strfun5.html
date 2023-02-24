@@ -1,0 +1,44 @@
+<!-- program to find no.of caps, small, alphabets, digits, symbols and words -->
+<html>
+ <head>
+   <title>String Functions5</title>
+   <script>
+     function findCounts()
+	 {
+       var str = st.value;  //or document.getElementById("st").value;
+       var uc=0, lc=0, dc=0, sc=0, space=0;
+
+	   for(i=0; i<str.length; i++)
+       {
+         ch=str.charAt(i);  
+         if( ch>='A' && ch<='Z' )	//upper case alpha
+             uc++;
+         else if( ch>='a' && ch<='z' )  //lower case alpha
+             lc++;
+         else if( ch>='0' && ch<='9' )  //digits
+            dc++;
+         else if(ch==" ")  //space
+            space++;
+        else		//symbols
+            sc++;
+       }
+
+       document.write("Given String  : "+ str + "<br>");
+       document.write("UpperCase Alpha : "+ uc + "<br>");
+       document.write("LowerCase Alpha : "+ lc + "<br>");
+       document.write("Total Alphabets  :"+ (uc+lc) +"<br>");
+       document.write("Digits   :"+ dc +"<br>");
+       document.write("Spe.Chars  :"+ sc +"<br>");
+       document.write("Words : "+ (space+1) + "<br>");
+	 }
+   </script>
+ </head>
+ <body>
+   <h2>demo on string functions</h2>
+   <label>Enter String</label>
+   <input type="text" id="st">
+   <input type="button" value="getCount" onclick="findCounts()">
+</body>
+</html>
+
+

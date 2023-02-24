@@ -1,0 +1,34 @@
+<!-- example on inheritance -->
+<html>
+<body>
+  <h1>demo on  inheritance</h1>		
+  <script>
+	function GP()  //constructor function (grand-parent )
+    {
+      document.write("im, GP constructor<br>");
+	}
+
+	function P()   //constructor function (Parent )
+    { 
+	  GP();  //inheritance 
+      document.write("im, P constructor<br>");
+	}
+
+	function C()   //constructor function (child )   multi-level
+    {
+      P();	  //inheritance
+      document.write("im, C constructor<br>");
+	}
+	
+    //creating object 
+	//let gp = new GP();   mem only for gp  
+    //let p = new P();	  mem for P & GP
+	//let c = new C();	  mem for C, P & GP
+	//	OR
+	new C();
+
+  </script>
+</bodY>
+</html>
+
+

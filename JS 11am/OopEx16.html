@@ -1,0 +1,58 @@
+<!-- example on class -->
+<!--
+	class ClassName
+	{
+		constructor(args)
+		{
+			init code....
+		}
+	    method-name(args)
+		{
+			code
+		}
+	}
+-->
+<html>
+<body>
+	 <h2> demo on class</h2>
+	 <label>First Number</label> <br>
+     <input type="text" id="t1"> <br>
+	
+	 <label>Second Number</label> <br>
+     <input type="text" id="t2"> <br>
+
+    <button onclick="fun1()">Store</button>
+
+	<script>
+	   class Simple
+	   {
+		 constructor(a, b)
+		 {
+		   this.a=a;
+		   this.b=b;
+		 }
+		 getSum(){
+			return parseInt(this.a)+parseInt(this.b);
+		 }
+	     getSub(){
+			return this.a-this.b;
+		 }
+	     getProduct(){
+			return this.a*this.b;
+		 }
+	   }
+
+     function fun1()
+     {
+	  let ob = new Simple(t1.value, t2.value);
+     
+      document.write("Sum is :" + ob.getSum(), "<br>");
+	  document.write("Sub is :" + ob.getSub(), "<br>");
+	  document.write("Product is :" + ob.getProduct(), "<br>");
+    }
+	</script>
+</body>
+</html>
+
+	
+

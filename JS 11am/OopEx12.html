@@ -1,0 +1,39 @@
+<!-- exmaple on inheritance -->
+<html>
+<body>
+  <script>
+	function Human(name,age,gen)  //constructor function (parent class)
+    {
+      this.name=name;
+      this.age=age;
+      this.gen=gen;   
+	}
+
+	function Employee(id,name,age,gen,job,salary)  //constructor function (child class)
+    {
+	  Human.call(this, name,age,gen); //<== inheritance
+      this.id=id;
+      this.job=job;
+      this.salary=salary;   
+	}
+ 
+    //creating object 
+    const emp = new Employee(1001,"ram",40,"male","ase",20000);
+	document.write(`Id	: ${emp.id} <br>`);
+	document.write(`Name	: ${emp.name} <br>`);
+	document.write(`Age	: ${emp.age} <br>`);
+	document.write(`Gendar	: ${emp.gen} <br>`);
+	document.write(`Job	: ${emp.job} <br>`);
+	document.write(`Salary	: ${emp.salary} <br><br>`);
+
+    //creating object 
+    let emp2 = new Employee(1002,"sita",36,"female","tl",39000);
+	document.write(`Id	: ${emp2.id} <br>`);
+	document.write(`Name	: ${emp2.name} <br>`);
+	document.write(`Age	: ${emp2.age} <br>`);
+	document.write(`Gendar	: ${emp2.gen} <br>`);
+	document.write(`Job	: ${emp2.job} <br>`);
+	document.write(`Salary	: ${emp2.salary} <br>`);
+  </script>
+</bodY>
+</html>

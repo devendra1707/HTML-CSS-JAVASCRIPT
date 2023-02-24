@@ -1,0 +1,48 @@
+min - max
+alpha
+dig
+symbol
+
+<!-- example on validating password -->
+<html>
+ <head>
+   <title>String Functions8</title>
+   <script>
+     function validatePW()
+	 {
+       var str=tpw.value.trim();  //or document.getElementById("st").value;
+       var ac=0,dc=0,sc=0;
+
+       if(str.length>=6)
+       {
+		   for(i=0; i<str.length; i++)
+		   {
+			 ch=str.charAt(i);
+			 if((ch>='A' && ch<='Z') || (ch>='a' && ch<='z'))
+				ac++;
+			 else if(ch>='0' && ch<='9')
+				dc++;
+			 else if(ch=="$" || ch=="@" || ch=="&" || ch=="#")
+				sc++;
+		   }
+
+          if(ac==0 || dc==0 || sc==0)
+	         msg.value="plz choose strong pw, try mix of alpha, digit and special char($,@,&,#)";
+	     else
+	        msg.value="PS Ok";
+       }else
+            msg.value="PW length at least 6chars min";
+  	  }
+   </script>
+ </head>
+ <body>
+   <h2>demo on string functions</h2>
+   <label>Enter MailId</label> <br>
+   <input type="email" id="mid"> <br>
+   <label>Enter Password</label> <br>
+   <input type="password" id="tpw"> <output id="msg"></output>  <br>
+   <input type="submit" value="SingUp" onclick="validatePW()">
+</body>
+</html>
+
+

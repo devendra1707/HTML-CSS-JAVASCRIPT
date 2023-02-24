@@ -1,0 +1,26 @@
+<!-- example on OOPs -->
+<Html>
+<head>
+  <title>object literals</title>		
+</head>
+<body>
+	<h1> object with const</h1>
+	<script>
+		//reference only const but not data/properties
+		const ob = {a:10, b:20}; 
+		document.write(`${ob.a}, ${ob.b}<br>`);
+		ob.a=101;  //we change data
+		ob.b=202;  //we change data
+		//Note: we can't modify reference or we can't re-instance 
+		document.write(`${ob.a}, ${ob.b}<br>`);
+  
+		const x=11;
+		const y=22;
+		const ob2 = {x,y};
+		document.write(`${ob2.x}, ${ob2.y}<br>`);
+		ob2.x=111; //its adding another x property 
+		document.write(`${ob2.x}, ${ob2.y}<br>`);
+		document.write(`${x}<br>`);
+	</script>
+</body>
+</html>

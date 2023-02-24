@@ -1,0 +1,21 @@
+<!-- example on constructor with methods -->
+<Html>
+<head>
+  <title>constructor</title>
+</head>
+<body>
+	<script>
+	  function Test() //dev const
+	  {				
+		this.m1 = function(){ return "hi, i am m1"; };
+		this.m2 = function(){ return "hi, i am m2"; };
+	  }
+		
+		//const ob = new Test();	OR
+	   document.write(`${new Test().m1()} <br>`);           
+	   document.write(`${new Test().m2()} <br>`);           
+
+ 	</script>
+</body>
+</html>
+
